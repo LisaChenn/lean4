@@ -1,0 +1,4 @@
+Choice of finisher:
+- rfl — both sides reduce to the same literal (Q3).
+- omega — linear arithmetic over ℕ / ℤ, including inequalities (Q2).
+- linarith — linear arithmetic, especially when ℤ and subtraction are involved (Q1).
