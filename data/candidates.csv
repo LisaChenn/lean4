@@ -1,0 +1,72 @@
+file,line,kind,name,finisher,n_tactics,last_tactic
+.lake/packages/mathlib/Mathlib/RingTheory/Smooth/StandardSmoothCotangent.lean,145,lemma,sectionCotangent_comp,rfl,5,rfl
+.lake/packages/mathlib/Mathlib/CategoryTheory/WithTerminal/Basic.lean,246,theorem,lift_map_liftStar,rfl,2,rfl
+.lake/packages/mathlib/Mathlib/Data/EReal/Operations.lean,737,lemma,mul_ne_bot,rfl,3,rfl
+.lake/packages/mathlib/Mathlib/Analysis/Calculus/Implicit.lean,259,theorem,implicitToOpenPartialHomeomorphOfComplemented_fst,rfl,1,rfl
+.lake/packages/mathlib/Mathlib/AlgebraicTopology/SimplexCategory/Basic.lean,399,lemma,example@L399,rfl,3,rfl
+.lake/packages/mathlib/Mathlib/Data/Rat/Defs.lean,233,theorem,coe_int_num_of_den_eq_one,rfl,3,rfl
+.lake/packages/mathlib/Mathlib/Topology/ContinuousMap/Interval.lean,70,theorem,concat_left,rfl,2,rfl
+.lake/packages/mathlib/Mathlib/CategoryTheory/GuitartExact/KanExtension.lean,138,lemma,hasPointwiseLeftKanExtensionAt_iff,rfl,3,rfl
+.lake/packages/mathlib/Mathlib/AlgebraicGeometry/EllipticCurve/Affine/Point.lean,514,lemma,pointEquivSubtype_symm_some,rfl,1,rfl
+.lake/packages/mathlib/Mathlib/Combinatorics/SimpleGraph/Paths.lean,1181,theorem,toDeleteEdges_copy,rfl,2,rfl
+.lake/packages/mathlib/Mathlib/RingTheory/Extension/ExtendScalars.lean,44,lemma,cotangentExtendScalarsEquiv_symm_toLinearMap,rfl,3,rfl
+.lake/packages/mathlib/Mathlib/Algebra/Homology/ShortComplex/RightHomology.lean,970,lemma,op_pOpcycles_opcyclesOpIso_hom,rfl,4,rfl
+.lake/packages/mathlib/Mathlib/NumberTheory/FactorisationProperties.lean,44,theorem,not_deficient_zero,decide,1,decide
+.lake/packages/mathlib/Mathlib/Data/Nat/Cast/Defs.lean,114,theorem,cast_four,decide,3,decide
+.lake/packages/mathlib/Mathlib/GroupTheory/Perm/Cycle/Type.lean,548,theorem,parts_partition,decide,4,decide
+.lake/packages/mathlib/Mathlib/Combinatorics/SimpleGraph/Metric.lean,259,lemma,Reachable.of_dist_ne_zero,decide,2,decide
+.lake/packages/mathlib/Mathlib/GroupTheory/SpecificGroups/Alternating/KleinFour.lean,49,theorem,card_of_card_eq_four,decide,5,decide
+.lake/packages/mathlib/Mathlib/Algebra/Polynomial/Div.lean,477,theorem,finiteMultiplicity_X_sub_C,decide,4,decide
+.lake/packages/mathlib/Mathlib/NumberTheory/FactorisationProperties.lean,65,theorem,weird_seventy,decide,1,decide +kernel
+.lake/packages/mathlib/Mathlib/Geometry/Euclidean/Incenter.lean,1270,lemma,sbtw_touchpoint_singleton,decide,5,decide +revert
+.lake/packages/mathlib/Mathlib/NumberTheory/FactorisationProperties.lean,56,theorem,not_abundant_zero,decide,1,decide
+.lake/packages/mathlib/Mathlib/AlgebraicTopology/SimplicialSet/StdSimplex.lean,580,lemma,faceSingletonIso_one_hom_comp_,decide,1,decide
+.lake/packages/mathlib/Mathlib/Combinatorics/SimpleGraph/CycleGraph.lean,25,theorem,cycleGraph_zero_adj,decide,2,decide
+.lake/packages/mathlib/Mathlib/NumberTheory/FactorisationProperties.lean,50,theorem,deficient_two,decide,1,decide
+.lake/packages/mathlib/Mathlib/Topology/UnitInterval.lean,40,theorem,fract_mem,norm_num,1,"norm_num [unitInterval, Real.Icc_eq_closedBall]"
+.lake/packages/mathlib/Mathlib/NumberTheory/Bernoulli.lean,71,theorem,bernoulli'_three,norm_num,2,"norm_num [sum_range_succ, sum_range_succ, sum_range_zero]"
+.lake/packages/mathlib/Mathlib/NumberTheory/CarmichaelNumber.lean,143,theorem,isCarmichael_1105,norm_num,2,norm_num
+.lake/packages/mathlib/Mathlib/Geometry/Manifold/Instances/Real.lean,309,lemma,iccLeftChart_extend_zero,norm_num,2,norm_num [hp.1]
+.lake/packages/mathlib/Mathlib/Analysis/Asymptotics/Defs.lean,139,theorem,IsLittleO.eventuallyLT_norm_of_eventually_pos,norm_num,3,norm_num
+.lake/packages/mathlib/Mathlib/Analysis/Complex/Circle.lean,121,lemma,exp_pi_ne_one,norm_num,4,norm_num at heq
+.lake/packages/mathlib/Mathlib/Topology/Bornology/BoundedOperation.lean,128,lemma,SeminormedAddCommGroup.lipschitzWith_sub,norm_num,2,norm_num
+.lake/packages/mathlib/Mathlib/Analysis/SpecialFunctions/Integrals/Basic.lean,562,theorem,integral_cos_pow_three,norm_num,2,norm_num at this; exact this
+.lake/packages/mathlib/Mathlib/Combinatorics/Enumerative/Catalan/Basic.lean,99,theorem,catalan_three,norm_num,1,"norm_num [catalan_eq_centralBinom_div, Nat.centralBinom, Nat.choose]"
+.lake/packages/mathlib/Mathlib/AlgebraicTopology/FundamentalGroupoid/Basic.lean,131,theorem,transAssocReparamAux_one,norm_num,1,norm_num [transAssocReparamAux]
+.lake/packages/mathlib/Mathlib/Analysis/InnerProductSpace/Defs.lean,183,theorem,ne_zero_of_inner_self_ne_zero,norm_num,1,"norm_num [ext_iff, inner_self_im]"
+.lake/packages/mathlib/Mathlib/Analysis/SpecialFunctions/Pow/Real.lean,916,lemma,one_sub_prime_cpow_ne_zero,norm_num,5,norm_num at this
+.lake/packages/mathlib/Mathlib/LinearAlgebra/Transvection/Generation.lean,136,theorem,finrank_quotient_sup_span_singleton,omega,4,omega
+.lake/packages/mathlib/Mathlib/Data/ZMod/ValMinAbs.lean,156,lemma,valMinAbs_natAbs_eq_min,omega,3,omega
+.lake/packages/mathlib/Mathlib/Data/Int/Interval.lean,173,lemma,Finset.Ico_succ_succ,omega,3,omega
+.lake/packages/mathlib/Mathlib/Order/Interval/Finset/Gaps.lean,38,theorem,intervalGapsWithin_fst_of_lt_lt,omega,2,omega
+.lake/packages/mathlib/Mathlib/Data/Fin/SuccPred.lean,442,theorem,val_sub_castLT_of_lt,omega,4,omega
+.lake/packages/mathlib/Mathlib/Data/Fin/Basic.lean,216,theorem,coe_int_add_eq_mod,omega,1,omega
+.lake/packages/mathlib/Mathlib/NumberTheory/PrimeCounting.lean,245,theorem,primeCounting_add_le,omega,3,omega
+.lake/packages/mathlib/Mathlib/Algebra/BigOperators/Intervals.lean,222,theorem,prod_Icc_div,omega,2,omega
+.lake/packages/mathlib/Mathlib/Data/Int/Interval.lean,167,lemma,Finset.Icc_succ_succ,omega,3,omega
+.lake/packages/mathlib/Mathlib/Data/Int/Interval.lean,118,theorem,Icc_eq_pair,omega,3,omega
+.lake/packages/mathlib/Mathlib/Analysis/Normed/Module/Bases.lean,222,theorem,proj_comp,omega,5,omega
+.lake/packages/mathlib/Mathlib/MeasureTheory/VectorMeasure/Basic.lean,141,theorem,of_iUnion_nonneg,linarith,2,linarith
+.lake/packages/mathlib/Mathlib/Analysis/Calculus/FDeriv/Measurable.lean,67,theorem,A_mono,linarith,3,"linarith [mem_ball.1 hy, r'r.2, @dist_nonneg _ _ y x]"
+.lake/packages/mathlib/Mathlib/NumberTheory/ZetaValues.lean,174,theorem,bernoulliFun_eval_half_eq_zero,linarith,4,linarith
+.lake/packages/mathlib/Mathlib/Geometry/Euclidean/Angle/Sphere.lean,132,theorem,IsTangentAt.angle_eq_pi_div_two,linarith,4,linarith
+.lake/packages/mathlib/Mathlib/Tactic/ComputeAsymptotics/Multiseries/Corecursion.lean,258,theorem,FriendlyOperation.cons,linarith,3,linarith [dist_nonneg (x := x) (y := y)]
+.lake/packages/mathlib/Mathlib/Topology/MetricSpace/Gluing.lean,269,theorem,dist_ne,linarith,2,"linarith [@dist_nonneg _ _ x (Nonempty.some ⟨x⟩), @dist_nonneg _ _ (Nonempty.some ⟨y⟩) y]"
+.lake/packages/mathlib/Mathlib/Topology/ContinuousMap/Bounded/Normed.lean,652,lemma,norm_sub_nonneg,linarith,4,linarith [(abs_le.mp (norm_coe_le_norm f x)).2]
+.lake/packages/mathlib/Mathlib/Analysis/SpecificLimits/ArithmeticGeometric.lean,90,lemma,arithGeom_strictMono,linarith,5,linarith
+.lake/packages/mathlib/Mathlib/LinearAlgebra/Transvection/Generation.lean,51,theorem,le_one_add_finrank_fixedSubmodule_mul_dilatransvection,linarith,5,linarith
+.lake/packages/mathlib/Mathlib/AlgebraicGeometry/EllipticCurve/DivisionPolynomial/Degree.lean,94,lemma,natDegree_pre,linarith,1,linarith only [W.natDegree_preΨ₄ h]
+.lake/packages/mathlib/Mathlib/Geometry/Manifold/Instances/Real.lean,358,lemma,IccRightChart_apply,linarith,3,linarith
+.lake/packages/mathlib/Mathlib/Analysis/SpecialFunctions/Log/PosLog.lean,149,lemma,posLog_le_abs,linarith,5,linarith [log_le_sub_one_of_pos (lt_trans one_pos h)]
+.lake/packages/mathlib/Mathlib/Tactic/ComputeAsymptotics/Multiseries/Monomial/Basic.lean,360,theorem,cons_toFun,ring,3,ring
+.lake/packages/mathlib/Mathlib/Geometry/Euclidean/BritishFlag.lean,17,theorem,norm_sq_add_norm_sub_add_sq_eq_norm_sub_sq_add_norm_sub_sq_add_two_mul_inner,ring,3,ring
+.lake/packages/mathlib/Mathlib/Analysis/Complex/UpperHalfPlane/FixedPoints.lean,102,theorem,fixedPt_neg,ring,3,ring
+.lake/packages/mathlib/Mathlib/Data/PNat/Xgcd.lean,205,theorem,finish_isSpecial,ring,3,ring
+.lake/packages/mathlib/Mathlib/Analysis/Complex/UpperHalfPlane/Metric.lean,126,theorem,dist_coe_center_sq,ring,5,ring
+.lake/packages/mathlib/Mathlib/LinearAlgebra/Matrix/SpecialLinearGroup.lean,358,lemma,isCoprime_col,ring,5,ring
+.lake/packages/mathlib/Mathlib/Analysis/SpecialFunctions/Integrals/Basic.lean,449,theorem,integral_sin_pow,ring,3,ring
+.lake/packages/mathlib/Mathlib/Analysis/Complex/Trigonometric.lean,235,theorem,sinh_sq,ring,2,ring
+.lake/packages/mathlib/Mathlib/Geometry/Euclidean/Triangle.lean,333,theorem,dist_sq_mul_dist_add_dist_sq_mul_dist,ring,4,ring
+.lake/packages/mathlib/Mathlib/NumberTheory/Real/GoldenRatio.lean,53,theorem,goldenRatio_add_goldenConj,ring,2,ring
+.lake/packages/mathlib/Mathlib/Analysis/SpecialFunctions/Integrals/LogTrigonometric.lean,67,theorem,integral_log_sin_zero_pi,ring,3,ring
+.lake/packages/mathlib/Mathlib/FieldTheory/Differential/Basic.lean,28,lemma,logDeriv_mul,ring,3,ring

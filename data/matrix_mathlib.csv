@@ -1,0 +1,19 @@
+name,file,orig_finisher,candidate_finisher,ok,err
+sectionCotangent_comp,.lake/packages/mathlib/Mathlib/RingTheory/Smooth/StandardSmoothCotangent.lean,rfl,rfl,True,
+sectionCotangent_comp,.lake/packages/mathlib/Mathlib/RingTheory/Smooth/StandardSmoothCotangent.lean,rfl,decide,True,
+sectionCotangent_comp,.lake/packages/mathlib/Mathlib/RingTheory/Smooth/StandardSmoothCotangent.lean,rfl,norm_num,True,
+sectionCotangent_comp,.lake/packages/mathlib/Mathlib/RingTheory/Smooth/StandardSmoothCotangent.lean,rfl,omega,True,
+sectionCotangent_comp,.lake/packages/mathlib/Mathlib/RingTheory/Smooth/StandardSmoothCotangent.lean,rfl,linarith,True,
+sectionCotangent_comp,.lake/packages/mathlib/Mathlib/RingTheory/Smooth/StandardSmoothCotangent.lean,rfl,ring,True,
+lift_map_liftStar,.lake/packages/mathlib/Mathlib/CategoryTheory/WithTerminal/Basic.lean,rfl,rfl,True,
+lift_map_liftStar,.lake/packages/mathlib/Mathlib/CategoryTheory/WithTerminal/Basic.lean,rfl,decide,False,"Expected type must not contain free variables   (match incl.obj x, star, starTerminal.from (incl.obj x) with     | of a, of a_1, f => F.map (down f)     | of x, star, x_1 => M x   "
+lift_map_liftStar,.lake/packages/mathlib/Mathlib/CategoryTheory/WithTerminal/Basic.lean,rfl,norm_num,False,"unsolved goals C : Type u inst✝¹ : Category.{v, u} C D : Type u_1 inst✝ : Category.{v_1, u_1} D Z : D F : C ⥤ D M : (x : C) → F.obj x ⟶ Z hM : ∀ (x y : C) (f : x ⟶ y), F.map f ≫ M "
+lift_map_liftStar,.lake/packages/mathlib/Mathlib/CategoryTheory/WithTerminal/Basic.lean,rfl,omega,False,"omega could not prove the goal: No usable constraints found. You may need to unfold definitions so `omega` can see linear arithmetic facts about `Nat` and `Int`, which may also inv"
+lift_map_liftStar,.lake/packages/mathlib/Mathlib/CategoryTheory/WithTerminal/Basic.lean,rfl,linarith,False,"unsolved goals C : Type u inst✝¹ : Category.{v, u} C D : Type u_1 inst✝ : Category.{v_1, u_1} D Z : D F : C ⥤ D M : (x : C) → F.obj x ⟶ Z hM : ∀ (x y : C) (f : x ⟶ y), F.map f ≫ M "
+lift_map_liftStar,.lake/packages/mathlib/Mathlib/CategoryTheory/WithTerminal/Basic.lean,rfl,ring,False,"unsolved goals C : Type u inst✝¹ : Category.{v, u} C D : Type u_1 inst✝ : Category.{v_1, u_1} D Z : D F : C ⥤ D M : (x : C) → F.obj x ⟶ Z hM : ∀ (x y : C) (f : x ⟶ y), F.map f ≫ M "
+mul_ne_bot,.lake/packages/mathlib/Mathlib/Data/EReal/Operations.lean,rfl,rfl,True,
+mul_ne_bot,.lake/packages/mathlib/Mathlib/Data/EReal/Operations.lean,rfl,decide,False,Expected type must not contain free variables   (a ≠ ⊥ ∨ b ≤ 0) ∧ (a ≤ 0 ∨ b ≠ ⊥) ∧ (a ≠ ⊤ ∨ 0 ≤ b) ∧ (0 ≤ a ∨ b ≠ ⊤) ↔     (a ≠ ⊥ ∨ b ≤ 0) ∧ (a ≤ 0 ∨ b ≠ ⊥) ∧ (a ≠ ⊤ ∨ 0 ≤ b) ∧ (0
+mul_ne_bot,.lake/packages/mathlib/Mathlib/Data/EReal/Operations.lean,rfl,norm_num,True,
+mul_ne_bot,.lake/packages/mathlib/Mathlib/Data/EReal/Operations.lean,rfl,omega,False,"omega could not prove the goal: No usable constraints found. You may need to unfold definitions so `omega` can see linear arithmetic facts about `Nat` and `Int`, which may also inv"
+mul_ne_bot,.lake/packages/mathlib/Mathlib/Data/EReal/Operations.lean,rfl,linarith,False,linarith failed to find a contradiction a b : EReal ⊢ False failed
+mul_ne_bot,.lake/packages/mathlib/Mathlib/Data/EReal/Operations.lean,rfl,ring,True,

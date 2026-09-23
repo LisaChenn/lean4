@@ -1,0 +1,2 @@
+-- Benny saw a 10-foot shark with 2 6-inch remoras attached to it.
+-- What percentage of the shark's body length is the combined length of the remoras?

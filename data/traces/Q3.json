@@ -1,0 +1,33 @@
+{"tactics":
+ [{"usedConstants":
+   ["HMul.hMul",
+    "id",
+    "instMulNat",
+    "instOfNatNat",
+    "IphoneAge.brandonAge",
+    "Nat",
+    "IphoneAge.benAge",
+    "OfNat.ofNat",
+    "Eq",
+    "IphoneAge.suzyAge",
+    "instHMul"],
+   "tactic": "unfold brandonAge benAge suzyAge",
+   "proofState": 0,
+   "pos": {"line": 18, "column": 2},
+   "goals": "⊢ brandonAge = 8",
+   "endPos": {"line": 18, "column": 34}},
+  {"usedConstants":
+   ["HMul.hMul",
+    "instMulNat",
+    "instOfNatNat",
+    "Nat",
+    "Eq.refl",
+    "OfNat.ofNat",
+    "instHMul"],
+   "tactic": "rfl",
+   "proofState": 1,
+   "pos": {"line": 19, "column": 2},
+   "goals": "⊢ 4 * (2 * 1) = 8",
+   "endPos": {"line": 19, "column": 5}}],
+ "env": 0}
+

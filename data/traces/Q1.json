@@ -1,0 +1,28 @@
+{"tactics":
+ [{"usedConstants": [],
+   "tactic": "unfold simulate afterDay1 afterDay2 afterDay3 at h",
+   "proofState": 0,
+   "pos": {"line": 24, "column": 2},
+   "goals": "n : ℤ\nh : simulate n = 78\n⊢ n = 19",
+   "endPos": {"line": 24, "column": 52}},
+  {"usedConstants":
+   ["Not.intro",
+    "Preorder.toLT",
+    "Mathlib.Tactic.Linarith.eq_of_not_lt_of_not_gt",
+    "Int.instLinearOrder",
+    "PartialOrder.toPreorder",
+    "SemilatticeInf.toPartialOrder",
+    "DistribLattice.toLattice",
+    "Int",
+    "instOfNat",
+    "LT.lt",
+    "OfNat.ofNat",
+    "instDistribLatticeOfLinearOrder",
+    "Lattice.toSemilatticeInf"],
+   "tactic": "linarith",
+   "proofState": 1,
+   "pos": {"line": 25, "column": 2},
+   "goals": "n : ℤ\nh : n - 38 + 50 - 28 + 100 - 25 = 78\n⊢ n = 19",
+   "endPos": {"line": 25, "column": 10}}],
+ "env": 0}
+

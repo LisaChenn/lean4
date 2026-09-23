@@ -1,0 +1,37 @@
+file,finisher,ok,err
+Q1,rfl,False,Tactic `rfl` failed: The left-hand side   n is not definitionally equal to the right-hand side   19  n : ℤ h : n - 38 + 50 - 28 + 100 - 25 = 78 ⊢ n = 19
+Q1,norm_num,False,unsolved goals n : ℤ h : n - 38 + 50 - 28 + 100 - 25 = 78 ⊢ n = 19
+Q1,omega,True,
+Q1,linarith,True,
+Q2,rfl,False,Tactic `rfl` failed: The left-hand side   5 is not definitionally equal to the right-hand side   n  n : ℕ h : n * 9 ≥ 15 * 3 ⊢ n ≥ 5
+Q2,norm_num,False,unsolved goals n : ℕ h : n * 9 ≥ 15 * 3 ⊢ 5 ≤ n
+Q2,omega,True,
+Q2,linarith,True,
+Q3,rfl,True,
+Q3,norm_num,True,
+Q3,omega,True,
+Q3,linarith,True,
+Q5,rfl,False,Tactic `rfl` failed: The left-hand side   ↑(2 * 6) / ↑(10 * 12) * 100 is not definitionally equal to the right-hand side   10  ⊢ ↑(2 * 6) / ↑(10 * 12) * 100 = 10
+Q5,norm_num,True,
+Q5,omega,False,"omega could not prove the goal: No usable constraints found. You may need to unfold definitions so `omega` can see linear arithmetic facts about `Nat` and `Int`, which may also inv"
+Q5,linarith,True,
+Q6,rfl,True,
+Q6,norm_num,True,
+Q6,omega,True,
+Q6,linarith,True,
+Q7,rfl,False,Tactic `rfl` failed: The left-hand side   400000 * (1 - 40 / 100) is not definitionally equal to the right-hand side   240000  ⊢ 400000 * (1 - 40 / 100) = 240000
+Q7,norm_num,True,
+Q7,omega,False,"omega could not prove the goal: No usable constraints found. You may need to unfold definitions so `omega` can see linear arithmetic facts about `Nat` and `Int`, which may also inv"
+Q7,linarith,True,
+Q8,rfl,True,
+Q8,norm_num,True,
+Q8,omega,True,
+Q8,linarith,True,
+Q9,rfl,True,
+Q9,norm_num,True,
+Q9,omega,True,
+Q9,linarith,True,
+Q10,rfl,True,
+Q10,norm_num,True,
+Q10,omega,True,
+Q10,linarith,True,

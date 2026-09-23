@@ -1,0 +1,23 @@
+{"tactics":
+ [{"usedConstants": [],
+   "tactic": "unfold babysits eggsNeeded basket flanRecipe goal at h",
+   "proofState": 0,
+   "pos": {"line": 24, "column": 2},
+   "goals": "n : ℕ\nh : babysits n ≥ eggsNeeded\n⊢ n ≥ 5",
+   "endPos": {"line": 24, "column": 56}},
+  {"usedConstants":
+   ["GE.ge",
+    "instOfNatNat",
+    "instLENat",
+    "Nat",
+    "Decidable.byContradiction",
+    "OfNat.ofNat",
+    "Not",
+    "Nat.decLe"],
+   "tactic": "omega",
+   "proofState": 1,
+   "pos": {"line": 25, "column": 2},
+   "goals": "n : ℕ\nh : n * 9 ≥ 15 * 3\n⊢ n ≥ 5",
+   "endPos": {"line": 25, "column": 7}}],
+ "env": 0}
+

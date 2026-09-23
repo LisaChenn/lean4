@@ -2,3 +2,37 @@ Choice of finisher:
 - rfl — both sides reduce to the same literal (Q3).
 - omega — linear arithmetic over ℕ / ℤ, including inequalities (Q2).
 - linarith — linear arithmetic, especially when ℤ and subtraction are involved (Q1).
+
+What Each Tactic Does
+rfl (Reflexivity)
+What it does: Proves that something is exactly equal to itself.
+When to use: When both sides of an equation are identical by definition.
+Example: Proving 2 + 2 = 4 or x = x.
+
+decide
+What it does: Runs a computer algorithm to check if a statement is true or false.
+When to use: For concrete calculations that a computer can easily verify.
+Example: Proving that a specific large number is prime, or checking if 100 < 200.
+
+norm_num (Normalize Numbers)
+What it does: Simplifies and solves arithmetic expressions involving standard numbers.
+When to use: When your equation has actual numbers (integers, fractions, decimals) rather than variables.
+Example: Proving (3/4) + 1.5 = 2.25.simp (Simplifier)
+What it does: Rewrites expressions into simpler forms using a large library of known mathematical rules.
+When to use: To clean up messy equations or break down definitions.
+Example: Changing x + 0 into just x, or simplifying \(A \cap \emptyset\) to ∅.
+
+omega
+What it does: Solves problems involving Presburger arithmetic (linear integer arithmetic).
+When to use: When you are working with integers or natural numbers, and the problem only involves addition, subtraction, inequalities, and multiplication by constant numbers.
+Example: Proving "If x > 0 and y > x, then y ≥ 2 (for integers)".ring
+What it does: Solves equations using the rules of standard algebra (commutative rings).
+When to use: When you need to show two algebraic expressions are equal by expanding, factoring, or rearranging variables.
+Example: Proving (x + y)² = x² + 2xy + y².
+
+
+1. Take an informal statement and convert it to lean; take the lean proof as a tree. chop the tree and then mix operations together
+
+informal language -> Lean -> tree -> Pruned Tree -> informal language
+
+tools that might be able to take a lean proof as a tree 
