@@ -1,0 +1,33 @@
+{"synthetic": false,
+ "schemaVersion": "2025-09-10",
+ "outputs":
+ {"o": ["1210251e900195a5.olean"],
+  "m": false,
+  "i": "955b6cf4dd3db23a.ilean",
+  "c": "1bc731871d2f5508.c"},
+ "log":
+ [{"message":
+   ".> LEAN_PATH=/Users/Lisa/Documents/GitHub/lean4/.lake/packages/Cli/.lake/build/lib/lean:/Users/Lisa/Documents/GitHub/lean4/.lake/packages/batteries/.lake/build/lib/lean:/Users/Lisa/Documents/GitHub/lean4/.lake/packages/Qq/.lake/build/lib/lean:/Users/Lisa/Documents/GitHub/lean4/.lake/packages/aesop/.lake/build/lib/lean:/Users/Lisa/Documents/GitHub/lean4/.lake/packages/proofwidgets/.lake/build/lib/lean:/Users/Lisa/Documents/GitHub/lean4/.lake/packages/importGraph/.lake/build/lib/lean:/Users/Lisa/Documents/GitHub/lean4/.lake/packages/LeanSearchClient/.lake/build/lib/lean:/Users/Lisa/Documents/GitHub/lean4/.lake/packages/plausible/.lake/build/lib/lean:/Users/Lisa/Documents/GitHub/lean4/.lake/packages/mathlib/.lake/build/lib/lean:/Users/Lisa/Documents/GitHub/lean4/.lake/build/lib/lean /Users/Lisa/.elan/toolchains/leanprover--lean4---v4.34.0-rc2/bin/lean /Users/Lisa/Documents/GitHub/lean4/Lean4.lean -o /Users/Lisa/Documents/GitHub/lean4/.lake/build/lib/lean/Lean4.olean -i /Users/Lisa/Documents/GitHub/lean4/.lake/build/lib/lean/Lean4.ilean -c /Users/Lisa/Documents/GitHub/lean4/.lake/build/ir/Lean4.c --setup /Users/Lisa/Documents/GitHub/lean4/.lake/build/ir/Lean4.setup.json --json",
+   "level": "trace"}],
+ "inputs":
+ [["deps",
+   [["Lean4/Lean4:extraDep", [["@Lean4:extraDep", "00000000000006bb"]]],
+    ["imports",
+     [["Lean4.Basic transitive imports (legacy)", "00000000000006bb"],
+      ["Lean4.Basic:importAllArts", "d3dce734529e1389"]]]]],
+  ["libs",
+   [["import dynlibs", "00000000000006bb"],
+    ["package external libraries", "00000000000006bb"],
+    ["module dynlibs", "00000000000006bb"],
+    ["module plugins", "00000000000006bb"]]],
+  ["Lean 4.34.0, commit 6a10ac8c22beadecabdbb0919c2b50214762f91d",
+   "365244c167ac8c1d"],
+  ["/Users/Lisa/Documents/GitHub/lean4/Lean4.lean", "5b23b2ab7198e818"],
+  ["options",
+   [["-Dpp.unicode.fun=true", "9b94070140457fab"],
+    ["-DautoImplicit=false", "4a85acb881fd49d0"]]],
+  ["isModule: false", "feefd2a0d3a1847e"],
+  ["Module.name: Lean4", "92588cb4ef7cae97"],
+  ["Package.id?: (some Lean4)", "db788b47c3616308"],
+  ["Module.leanArgs: #[]", "00000000000006bb"]],
+ "depHash": "685037636d6068f9"}

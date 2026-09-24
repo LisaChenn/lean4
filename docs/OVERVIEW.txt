@@ -1,0 +1,210 @@
+================================================================================
+PROJECT OVERVIEW — Informal → Lean → Tree → Pruned Tree → Informal
+================================================================================
+
+BIG-PICTURE OBJECTIVE
+---------------------
+Take a problem stated in natural language, run it through a formal detour,
+and get back a *different* natural-language problem — one that's equivalent
+in content but transformed by operations we can only see clearly in the
+formal middle. The full pipeline:
+
+    informal language
+        ↓  (autoformalize / hand-formalize)
+    Lean 4 statement + proof
+        ↓  (trace the proof as a tactic tree)
+    proof tree
+        ↓  (prune / rewrite: swap tactics, drop redundant steps,
+        ↓   re-mix sub-goals)
+    pruned tree
+        ↓  (re-render as prose)
+    informal language  (transformed)
+
+The formal middle is where the interesting work happens: once a problem is in
+Lean, we can inspect its proof structure, ask what operations are actually
+essential, and mechanically rewrite it. Round-tripping back to informal
+language turns those manipulations into *problem transformations* — a way to
+generate variants, compress, or restate GSM8K-style problems that we can then
+compare to the original.
+
+CURRENT STAGE — the "prune" step
+--------------------------------
+Everything in this repo today is scaffolding for the tree-pruning stage.
+Specifically, we're studying **tactic-finisher interchangeability** as a first
+concrete pruning operation: when a proof ends in `linarith`, would `omega` or
+`norm_num` have worked too? Answering this empirically tells us which
+substitutions in the tactic tree are safe.
+
+We answer it by:
+  1. Building a corpus of short proofs (hand-formalized GSM8K word problems in
+     Lean4/Q*.lean, plus short proofs harvested from Mathlib).
+  2. For each proof, replaying it with every candidate finisher substituted in
+     the final position.
+  3. Reporting (a) an interchange matrix — for author-choice A, how often does
+     candidate B also close? — and (b) a "compression" rate — how often could a
+     strictly cheaper tactic have replaced the author's choice?
+
+Finishers under study: rfl, decide, norm_num, omega, linarith, ring.
+Cost ordering (cheapest to most expensive): rfl < decide < norm_num < ring
+                                          < omega < linarith.
+
+WHERE EACH PIPELINE STAGE LIVES TODAY
+-------------------------------------
+  informal → Lean       : Lean4/Q*.lean  (done by hand for now; the docstring
+                          at the top of each file is the original prose)
+  Lean → tree           : scripts/extract_traces.sh + data/traces/Q*.json
+                          (the JSON is a flat tactic list — a linearized tree)
+  tree → pruned tree    : scripts/run_matrix*.py  (currently only prunes the
+                          finisher position; broader pruning is future work)
+  pruned tree → informal: NOT YET IMPLEMENTED — this is the next stage.
+
+
+================================================================================
+DIRECTORY LAYOUT
+================================================================================
+
+lean4/
+├── lakefile.toml, lean-toolchain, lake-manifest.json
+│       Lake build config. Pins Lean v4.34.0-rc2 and Mathlib.
+│       `autoImplicit = false` — every variable must be bound explicitly.
+│
+├── Lean4.lean
+│       Library root. Currently `import Lean4.Basic` (Basic.lean does not
+│       exist — top-level `lake build` fails on the default target; individual
+│       Q files still build). Fix by adding Basic.lean or removing the import.
+│
+├── Lean4/                     ← the hand-formalized corpus (Package 1)
+│   └── Q1.lean … Q10.lean
+│           One GSM8K word problem per file. Consistent shape:
+│             docstring → `namespace X` → `def`s for named quantities
+│             → one `theorem NAME := by unfold …; <finisher>`.
+│           Category tag in the docstring (e.g. "sequential state-change")
+│           notes the GSM8K taxonomy bucket. Preserve this shape when adding
+│           Q11+ so the parsers keep working.
+│
+├── Extraction/
+│   └── ProbeAll.lean
+│           One-line `import Mathlib`. Serves as a scratch environment when a
+│           probe needs the full Mathlib env preloaded.
+│
+├── scripts/                   ← the experiment drivers (Python + shell)
+│   ├── extract_traces.sh
+│   │       Runs the lean-repl over every Lean4/Q*.lean with `allTactics:
+│   │       true`, dumping tactic-level traces to data/traces/Q{n}.json.
+│   │       Requires the sibling ../lean-repl build.
+│   │
+│   ├── summarize_traces.py
+│   │       Reads data/traces/*.json and prints, per file: number of tactics,
+│   │       tactic head sequence, and the finisher (last tactic head). Ends
+│   │       with a finisher distribution + the list of linarith/omega proofs.
+│   │
+│   ├── run_matrix.py          ← Experiment A (local Q*.lean)
+│   │       For each Q file: replay the unfold from the trace, then try each of
+│   │       {rfl, norm_num, omega, linarith} as the finisher. Uses signature
+│   │       reconstruction from source (pretty-printed goals aren't round-trip
+│   │       safe). Emits data/matrix.csv (file, finisher, ok, err).
+│   │
+│   ├── find_mathlib_candidates.py  ← Package 2, step 1
+│   │       Walks .lake/packages/mathlib/Mathlib, matches theorems/lemmas/
+│   │       examples whose proof body is ≤ 5 tactics AND whose last tactic
+│   │       head is one of the six finishers. Writes:
+│   │         data/candidates_all.csv  (everything matched, for auditing)
+│   │         data/candidates.csv      (balanced sample: 12 per finisher, seed=0)
+│   │
+│   ├── run_matrix_mathlib.py       ← Package 2, step 2 (v1: signature reconstruction)
+│   │       Older approach that rebuilds an `example sig := by preamble;
+│   │       <finisher>` from source and probes via `cmd`. Prefer v2 below.
+│   │
+│   ├── run_matrix_mathlib_v2.py    ← Package 2, step 2 (v2: text substitution) ★
+│   │       For each candidate, writes N variant files that differ from the
+│   │       original ONLY in the finisher line. Loads all N via `path` in one
+│   │       REPL session, along with the untouched baseline. A variant is
+│   │       "OK" iff its error-line set is a subset of the baseline's — i.e.
+│   │       the substitution introduced no new errors. Runs candidates in
+│   │       parallel (default 4 workers). Emits data/matrix_mathlib.csv.
+│   │       CLI: `python run_matrix_mathlib_v2.py [LIMIT] [--workers=N]`
+│   │       NOTE: SCRATCH path is hard-coded and includes a Claude session id.
+│   │       Update the constant if the path goes stale.
+│   │
+│   └── analyze_matrix.py       ← Package 2, step 3 (reporting)
+│           Reads data/matrix_mathlib.csv and prints:
+│             • coverage (rows where the author's own finisher reproduces)
+│             • interchange matrix (rows=author choice, cols=candidate,
+│               cells = fraction of proofs where candidate also closes)
+│             • compression rate (fraction of proofs a cheaper finisher solves)
+│               plus the (author → best cheaper) tally.
+│
+├── data/                      ← experiment I/O (mix of inputs and outputs)
+│   ├── traces/Q*.json         REPL tactic traces (input to run_matrix.py)
+│   ├── candidates.csv         balanced Mathlib sample (input to matrix v2)
+│   ├── candidates_all.csv     unfiltered superset (audit only)
+│   ├── matrix.csv             output of run_matrix.py (Q*.lean × finishers)
+│   └── matrix_mathlib.csv     output of run_matrix_mathlib_v2.py
+│
+├── csv/
+│   ├── pilot_pool.csv         early pilot notes
+│   └── notes.txt              hand notes on when each finisher is appropriate
+│                              (design rationale — not code)
+│
+└── docs/                      ← this directory
+    └── OVERVIEW.txt           you are reading it
+
+
+================================================================================
+END-TO-END DATA FLOW
+================================================================================
+
+Package 1  (local corpus):
+
+    Lean4/Q*.lean
+        │
+        │  extract_traces.sh   (lean-repl, allTactics=true)
+        ▼
+    data/traces/Q*.json
+        │
+        ├──►  summarize_traces.py       →  console: finisher distribution
+        │
+        └──►  run_matrix.py             →  data/matrix.csv
+
+
+Package 2  (Mathlib):
+
+    .lake/packages/mathlib/Mathlib/**.lean
+        │
+        │  find_mathlib_candidates.py
+        ▼
+    data/candidates.csv
+        │
+        │  run_matrix_mathlib_v2.py     (writes per-variant files,
+        │                                loads via REPL `path`, diffs errors)
+        ▼
+    data/matrix_mathlib.csv
+        │
+        │  analyze_matrix.py
+        ▼
+    interchange matrix + compression stats on console
+
+
+================================================================================
+EXTERNAL DEPENDENCY
+================================================================================
+
+All Python drivers and extract_traces.sh call the leanprover-community REPL:
+    ../lean-repl/.lake/build/bin/repl
+(a sibling checkout of the repo, not a submodule here). Build it once with
+`lake build` inside ../lean-repl before running any script. The REPL is
+launched via `lake env` from this repo so it inherits the Mathlib env.
+
+
+================================================================================
+WHEN ADDING A NEW FINISHER TO THE STUDY
+================================================================================
+
+There is no shared constants module. Update ALL of the following lists:
+  • scripts/run_matrix.py                — FINISHERS
+  • scripts/run_matrix_mathlib.py        — FINISHERS
+  • scripts/run_matrix_mathlib_v2.py     — FINISHERS
+  • scripts/find_mathlib_candidates.py   — FINISHERS
+  • scripts/analyze_matrix.py            — FINISHERS  and  SIMPLICITY (ranking)
+  • scripts/summarize_traces.py          — FINISHERS  (if it should count in
+                                                       the trace-head summary)

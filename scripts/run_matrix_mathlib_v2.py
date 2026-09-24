@@ -17,6 +17,7 @@ from __future__ import annotations
 
 import csv
 import json
+import os
 import re
 import subprocess
 import sys
@@ -24,10 +25,10 @@ from concurrent.futures import ProcessPoolExecutor, as_completed
 from pathlib import Path
 
 REPO = Path(__file__).resolve().parent.parent
-REPL_BIN = REPO.parent / "lean-repl" / ".lake" / "build" / "bin" / "repl"
+REPL_BIN = Path(os.environ.get("REPL_BIN", str(REPO.parent / "lean-repl" / ".lake" / "build" / "bin" / "repl")))
 CANDIDATES_CSV = REPO / "data" / "candidates.csv"
 OUT_CSV = REPO / "data" / "matrix_mathlib.csv"
-SCRATCH = Path("/private/tmp/claude-502/-Users-Lisa-Documents-GitHub-lean4/4fdc1e61-8da2-4b05-93c5-3ab39975edc1/scratchpad/variants")
+SCRATCH = Path(os.environ.get("LEAN4_VARIANTS_DIR", "/tmp/lean4_variants"))
 
 FINISHERS = ["rfl", "decide", "norm_num", "omega", "linarith", "ring"]
 

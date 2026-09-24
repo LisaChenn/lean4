@@ -5,15 +5,423 @@ sectionCotangent_comp,.lake/packages/mathlib/Mathlib/RingTheory/Smooth/StandardS
 sectionCotangent_comp,.lake/packages/mathlib/Mathlib/RingTheory/Smooth/StandardSmoothCotangent.lean,rfl,omega,True,
 sectionCotangent_comp,.lake/packages/mathlib/Mathlib/RingTheory/Smooth/StandardSmoothCotangent.lean,rfl,linarith,True,
 sectionCotangent_comp,.lake/packages/mathlib/Mathlib/RingTheory/Smooth/StandardSmoothCotangent.lean,rfl,ring,True,
-lift_map_liftStar,.lake/packages/mathlib/Mathlib/CategoryTheory/WithTerminal/Basic.lean,rfl,rfl,True,
-lift_map_liftStar,.lake/packages/mathlib/Mathlib/CategoryTheory/WithTerminal/Basic.lean,rfl,decide,False,"Expected type must not contain free variables   (match incl.obj x, star, starTerminal.from (incl.obj x) with     | of a, of a_1, f => F.map (down f)     | of x, star, x_1 => M x   "
-lift_map_liftStar,.lake/packages/mathlib/Mathlib/CategoryTheory/WithTerminal/Basic.lean,rfl,norm_num,False,"unsolved goals C : Type u inst✝¹ : Category.{v, u} C D : Type u_1 inst✝ : Category.{v_1, u_1} D Z : D F : C ⥤ D M : (x : C) → F.obj x ⟶ Z hM : ∀ (x y : C) (f : x ⟶ y), F.map f ≫ M "
-lift_map_liftStar,.lake/packages/mathlib/Mathlib/CategoryTheory/WithTerminal/Basic.lean,rfl,omega,False,"omega could not prove the goal: No usable constraints found. You may need to unfold definitions so `omega` can see linear arithmetic facts about `Nat` and `Int`, which may also inv"
-lift_map_liftStar,.lake/packages/mathlib/Mathlib/CategoryTheory/WithTerminal/Basic.lean,rfl,linarith,False,"unsolved goals C : Type u inst✝¹ : Category.{v, u} C D : Type u_1 inst✝ : Category.{v_1, u_1} D Z : D F : C ⥤ D M : (x : C) → F.obj x ⟶ Z hM : ∀ (x y : C) (f : x ⟶ y), F.map f ≫ M "
-lift_map_liftStar,.lake/packages/mathlib/Mathlib/CategoryTheory/WithTerminal/Basic.lean,rfl,ring,False,"unsolved goals C : Type u inst✝¹ : Category.{v, u} C D : Type u_1 inst✝ : Category.{v_1, u_1} D Z : D F : C ⥤ D M : (x : C) → F.obj x ⟶ Z hM : ∀ (x y : C) (f : x ⟶ y), F.map f ≫ M "
+example@L399,.lake/packages/mathlib/Mathlib/AlgebraicTopology/SimplexCategory/Basic.lean,rfl,rfl,False,finisher line not found
+example@L399,.lake/packages/mathlib/Mathlib/AlgebraicTopology/SimplexCategory/Basic.lean,rfl,decide,False,finisher line not found
+example@L399,.lake/packages/mathlib/Mathlib/AlgebraicTopology/SimplexCategory/Basic.lean,rfl,norm_num,False,finisher line not found
+example@L399,.lake/packages/mathlib/Mathlib/AlgebraicTopology/SimplexCategory/Basic.lean,rfl,omega,False,finisher line not found
+example@L399,.lake/packages/mathlib/Mathlib/AlgebraicTopology/SimplexCategory/Basic.lean,rfl,linarith,False,finisher line not found
+example@L399,.lake/packages/mathlib/Mathlib/AlgebraicTopology/SimplexCategory/Basic.lean,rfl,ring,False,finisher line not found
+implicitToOpenPartialHomeomorphOfComplemented_fst,.lake/packages/mathlib/Mathlib/Analysis/Calculus/Implicit.lean,rfl,rfl,True,
+implicitToOpenPartialHomeomorphOfComplemented_fst,.lake/packages/mathlib/Mathlib/Analysis/Calculus/Implicit.lean,rfl,decide,True,
+implicitToOpenPartialHomeomorphOfComplemented_fst,.lake/packages/mathlib/Mathlib/Analysis/Calculus/Implicit.lean,rfl,norm_num,True,
+implicitToOpenPartialHomeomorphOfComplemented_fst,.lake/packages/mathlib/Mathlib/Analysis/Calculus/Implicit.lean,rfl,omega,True,
+implicitToOpenPartialHomeomorphOfComplemented_fst,.lake/packages/mathlib/Mathlib/Analysis/Calculus/Implicit.lean,rfl,linarith,True,
+implicitToOpenPartialHomeomorphOfComplemented_fst,.lake/packages/mathlib/Mathlib/Analysis/Calculus/Implicit.lean,rfl,ring,True,
+coe_int_num_of_den_eq_one,.lake/packages/mathlib/Mathlib/Data/Rat/Defs.lean,rfl,rfl,True,
+coe_int_num_of_den_eq_one,.lake/packages/mathlib/Mathlib/Data/Rat/Defs.lean,rfl,decide,False,Expected type must not contain free variables   q.num /. 1 = q.num /. ↑1  Hint: Use the `+revert` option to automatically clean up and revert free variables
+coe_int_num_of_den_eq_one,.lake/packages/mathlib/Mathlib/Data/Rat/Defs.lean,rfl,norm_num,False,unsolved goals q : ℚ hq : q.den = 1 ⊢ q.num /. 1 = q.num /. ↑1
+coe_int_num_of_den_eq_one,.lake/packages/mathlib/Mathlib/Data/Rat/Defs.lean,rfl,omega,False,"omega could not prove the goal: No usable constraints found. You may need to unfold definitions so `omega` can see linear arithmetic facts about `Nat` and `Int`, which may also inv"
+coe_int_num_of_den_eq_one,.lake/packages/mathlib/Mathlib/Data/Rat/Defs.lean,rfl,linarith,False,unsolved goals q : ℚ hq : q.den = 1 ⊢ q.num /. 1 = q.num /. ↑1
+coe_int_num_of_den_eq_one,.lake/packages/mathlib/Mathlib/Data/Rat/Defs.lean,rfl,ring,False,unsolved goals q : ℚ hq : q.den = 1 ⊢ q.num /. 1 = q.num /. ↑1
+hasPointwiseLeftKanExtensionAt_iff,.lake/packages/mathlib/Mathlib/CategoryTheory/GuitartExact/KanExtension.lean,rfl,rfl,True,
+hasPointwiseLeftKanExtensionAt_iff,.lake/packages/mathlib/Mathlib/CategoryTheory/GuitartExact/KanExtension.lean,rfl,decide,True,
+hasPointwiseLeftKanExtensionAt_iff,.lake/packages/mathlib/Mathlib/CategoryTheory/GuitartExact/KanExtension.lean,rfl,norm_num,True,
+hasPointwiseLeftKanExtensionAt_iff,.lake/packages/mathlib/Mathlib/CategoryTheory/GuitartExact/KanExtension.lean,rfl,omega,True,
+hasPointwiseLeftKanExtensionAt_iff,.lake/packages/mathlib/Mathlib/CategoryTheory/GuitartExact/KanExtension.lean,rfl,linarith,True,
+hasPointwiseLeftKanExtensionAt_iff,.lake/packages/mathlib/Mathlib/CategoryTheory/GuitartExact/KanExtension.lean,rfl,ring,True,
+concat_left,.lake/packages/mathlib/Mathlib/Topology/ContinuousMap/Interval.lean,rfl,rfl,True,
+concat_left,.lake/packages/mathlib/Mathlib/Topology/ContinuousMap/Interval.lean,rfl,decide,False,"Expected type must not contain free variables   (f.concat g) t = ((f.concat g).comp IccInclusionLeft) ⟨↑t, ⋯⟩  Hint: Use the `+revert` option to automatically clean up and revert f"
+concat_left,.lake/packages/mathlib/Mathlib/Topology/ContinuousMap/Interval.lean,rfl,norm_num,False,unsolved goals α : Type u_1 inst✝⁵ : LinearOrder α inst✝⁴ : TopologicalSpace α inst✝³ : OrderTopology α a b c : α inst✝² : Fact (a ≤ b) inst✝¹ : Fact (b ≤ c) E : Type u_2 inst✝ : T
+concat_left,.lake/packages/mathlib/Mathlib/Topology/ContinuousMap/Interval.lean,rfl,omega,False,"omega could not prove the goal: No usable constraints found. You may need to unfold definitions so `omega` can see linear arithmetic facts about `Nat` and `Int`, which may also inv"
+concat_left,.lake/packages/mathlib/Mathlib/Topology/ContinuousMap/Interval.lean,rfl,linarith,False,unsolved goals α : Type u_1 inst✝⁵ : LinearOrder α inst✝⁴ : TopologicalSpace α inst✝³ : OrderTopology α a b c : α inst✝² : Fact (a ≤ b) inst✝¹ : Fact (b ≤ c) E : Type u_2 inst✝ : T
+concat_left,.lake/packages/mathlib/Mathlib/Topology/ContinuousMap/Interval.lean,rfl,ring,False,unsolved goals α : Type u_1 inst✝⁵ : LinearOrder α inst✝⁴ : TopologicalSpace α inst✝³ : OrderTopology α a b c : α inst✝² : Fact (a ≤ b) inst✝¹ : Fact (b ≤ c) E : Type u_2 inst✝ : T
+pointEquivSubtype_symm_some,.lake/packages/mathlib/Mathlib/AlgebraicGeometry/EllipticCurve/Affine/Point.lean,rfl,rfl,True,
+pointEquivSubtype_symm_some,.lake/packages/mathlib/Mathlib/AlgebraicGeometry/EllipticCurve/Affine/Point.lean,rfl,decide,True,
+pointEquivSubtype_symm_some,.lake/packages/mathlib/Mathlib/AlgebraicGeometry/EllipticCurve/Affine/Point.lean,rfl,norm_num,True,
+pointEquivSubtype_symm_some,.lake/packages/mathlib/Mathlib/AlgebraicGeometry/EllipticCurve/Affine/Point.lean,rfl,omega,True,
+pointEquivSubtype_symm_some,.lake/packages/mathlib/Mathlib/AlgebraicGeometry/EllipticCurve/Affine/Point.lean,rfl,linarith,True,
+pointEquivSubtype_symm_some,.lake/packages/mathlib/Mathlib/AlgebraicGeometry/EllipticCurve/Affine/Point.lean,rfl,ring,True,
+cotangentExtendScalarsEquiv_symm_toLinearMap,.lake/packages/mathlib/Mathlib/RingTheory/Extension/ExtendScalars.lean,rfl,rfl,True,
+cotangentExtendScalarsEquiv_symm_toLinearMap,.lake/packages/mathlib/Mathlib/RingTheory/Extension/ExtendScalars.lean,rfl,decide,True,
+cotangentExtendScalarsEquiv_symm_toLinearMap,.lake/packages/mathlib/Mathlib/RingTheory/Extension/ExtendScalars.lean,rfl,norm_num,True,
+cotangentExtendScalarsEquiv_symm_toLinearMap,.lake/packages/mathlib/Mathlib/RingTheory/Extension/ExtendScalars.lean,rfl,omega,True,
+cotangentExtendScalarsEquiv_symm_toLinearMap,.lake/packages/mathlib/Mathlib/RingTheory/Extension/ExtendScalars.lean,rfl,linarith,True,
+cotangentExtendScalarsEquiv_symm_toLinearMap,.lake/packages/mathlib/Mathlib/RingTheory/Extension/ExtendScalars.lean,rfl,ring,True,
+toDeleteEdges_copy,.lake/packages/mathlib/Mathlib/Combinatorics/SimpleGraph/Paths.lean,rfl,rfl,True,
+toDeleteEdges_copy,.lake/packages/mathlib/Mathlib/Combinatorics/SimpleGraph/Paths.lean,rfl,decide,True,
+toDeleteEdges_copy,.lake/packages/mathlib/Mathlib/Combinatorics/SimpleGraph/Paths.lean,rfl,norm_num,True,
+toDeleteEdges_copy,.lake/packages/mathlib/Mathlib/Combinatorics/SimpleGraph/Paths.lean,rfl,omega,True,
+toDeleteEdges_copy,.lake/packages/mathlib/Mathlib/Combinatorics/SimpleGraph/Paths.lean,rfl,linarith,True,
+toDeleteEdges_copy,.lake/packages/mathlib/Mathlib/Combinatorics/SimpleGraph/Paths.lean,rfl,ring,True,
+op_pOpcycles_opcyclesOpIso_hom,.lake/packages/mathlib/Mathlib/Algebra/Homology/ShortComplex/RightHomology.lean,rfl,rfl,True,
+op_pOpcycles_opcyclesOpIso_hom,.lake/packages/mathlib/Mathlib/Algebra/Homology/ShortComplex/RightHomology.lean,rfl,decide,True,
+op_pOpcycles_opcyclesOpIso_hom,.lake/packages/mathlib/Mathlib/Algebra/Homology/ShortComplex/RightHomology.lean,rfl,norm_num,True,
+op_pOpcycles_opcyclesOpIso_hom,.lake/packages/mathlib/Mathlib/Algebra/Homology/ShortComplex/RightHomology.lean,rfl,omega,True,
+op_pOpcycles_opcyclesOpIso_hom,.lake/packages/mathlib/Mathlib/Algebra/Homology/ShortComplex/RightHomology.lean,rfl,linarith,True,
+op_pOpcycles_opcyclesOpIso_hom,.lake/packages/mathlib/Mathlib/Algebra/Homology/ShortComplex/RightHomology.lean,rfl,ring,True,
+cast_four,.lake/packages/mathlib/Mathlib/Data/Nat/Cast/Defs.lean,decide,rfl,True,
+cast_four,.lake/packages/mathlib/Mathlib/Data/Nat/Cast/Defs.lean,decide,decide,True,
+cast_four,.lake/packages/mathlib/Mathlib/Data/Nat/Cast/Defs.lean,decide,norm_num,False,unsolved goals R : Type u_1 inst✝ : AddMonoidWithOne R ⊢ 1 + 1 = 2
+cast_four,.lake/packages/mathlib/Mathlib/Data/Nat/Cast/Defs.lean,decide,omega,False,omega could not prove the goal: a possible counterexample may satisfy the constraints   a ≥ 3 where  a := ↑2
+cast_four,.lake/packages/mathlib/Mathlib/Data/Nat/Cast/Defs.lean,decide,linarith,False,unsolved goals R : Type u_1 inst✝ : AddMonoidWithOne R ⊢ 1 + 1 = 2
+cast_four,.lake/packages/mathlib/Mathlib/Data/Nat/Cast/Defs.lean,decide,ring,False,unsolved goals R : Type u_1 inst✝ : AddMonoidWithOne R ⊢ 1 + 1 = 2
 mul_ne_bot,.lake/packages/mathlib/Mathlib/Data/EReal/Operations.lean,rfl,rfl,True,
 mul_ne_bot,.lake/packages/mathlib/Mathlib/Data/EReal/Operations.lean,rfl,decide,False,Expected type must not contain free variables   (a ≠ ⊥ ∨ b ≤ 0) ∧ (a ≤ 0 ∨ b ≠ ⊥) ∧ (a ≠ ⊤ ∨ 0 ≤ b) ∧ (0 ≤ a ∨ b ≠ ⊤) ↔     (a ≠ ⊥ ∨ b ≤ 0) ∧ (a ≤ 0 ∨ b ≠ ⊥) ∧ (a ≠ ⊤ ∨ 0 ≤ b) ∧ (0
 mul_ne_bot,.lake/packages/mathlib/Mathlib/Data/EReal/Operations.lean,rfl,norm_num,True,
 mul_ne_bot,.lake/packages/mathlib/Mathlib/Data/EReal/Operations.lean,rfl,omega,False,"omega could not prove the goal: No usable constraints found. You may need to unfold definitions so `omega` can see linear arithmetic facts about `Nat` and `Int`, which may also inv"
 mul_ne_bot,.lake/packages/mathlib/Mathlib/Data/EReal/Operations.lean,rfl,linarith,False,linarith failed to find a contradiction a b : EReal ⊢ False failed
 mul_ne_bot,.lake/packages/mathlib/Mathlib/Data/EReal/Operations.lean,rfl,ring,True,
+Reachable.of_dist_ne_zero,.lake/packages/mathlib/Mathlib/Combinatorics/SimpleGraph/Metric.lean,decide,rfl,True,
+Reachable.of_dist_ne_zero,.lake/packages/mathlib/Mathlib/Combinatorics/SimpleGraph/Metric.lean,decide,decide,True,
+Reachable.of_dist_ne_zero,.lake/packages/mathlib/Mathlib/Combinatorics/SimpleGraph/Metric.lean,decide,norm_num,True,
+Reachable.of_dist_ne_zero,.lake/packages/mathlib/Mathlib/Combinatorics/SimpleGraph/Metric.lean,decide,omega,True,
+Reachable.of_dist_ne_zero,.lake/packages/mathlib/Mathlib/Combinatorics/SimpleGraph/Metric.lean,decide,linarith,True,
+Reachable.of_dist_ne_zero,.lake/packages/mathlib/Mathlib/Combinatorics/SimpleGraph/Metric.lean,decide,ring,True,
+card_of_card_eq_four,.lake/packages/mathlib/Mathlib/GroupTheory/SpecificGroups/Alternating/KleinFour.lean,decide,rfl,True,
+card_of_card_eq_four,.lake/packages/mathlib/Mathlib/GroupTheory/SpecificGroups/Alternating/KleinFour.lean,decide,decide,True,
+card_of_card_eq_four,.lake/packages/mathlib/Mathlib/GroupTheory/SpecificGroups/Alternating/KleinFour.lean,decide,norm_num,True,
+card_of_card_eq_four,.lake/packages/mathlib/Mathlib/GroupTheory/SpecificGroups/Alternating/KleinFour.lean,decide,omega,True,
+card_of_card_eq_four,.lake/packages/mathlib/Mathlib/GroupTheory/SpecificGroups/Alternating/KleinFour.lean,decide,linarith,True,
+card_of_card_eq_four,.lake/packages/mathlib/Mathlib/GroupTheory/SpecificGroups/Alternating/KleinFour.lean,decide,ring,True,
+not_deficient_zero,.lake/packages/mathlib/Mathlib/NumberTheory/FactorisationProperties.lean,decide,rfl,False,Tactic `rfl` failed: Expected the goal to be a binary relation  Hint: Reflexivity tactics can only be used on goals of the form `x ~ x` or `R x x`  ⊢ ¬Deficient 0
+not_deficient_zero,.lake/packages/mathlib/Mathlib/NumberTheory/FactorisationProperties.lean,decide,decide,True,
+not_deficient_zero,.lake/packages/mathlib/Mathlib/NumberTheory/FactorisationProperties.lean,decide,norm_num,False,unsolved goals ⊢ ¬Deficient 0
+not_deficient_zero,.lake/packages/mathlib/Mathlib/NumberTheory/FactorisationProperties.lean,decide,omega,False,"omega could not prove the goal: No usable constraints found. You may need to unfold definitions so `omega` can see linear arithmetic facts about `Nat` and `Int`, which may also inv"
+not_deficient_zero,.lake/packages/mathlib/Mathlib/NumberTheory/FactorisationProperties.lean,decide,linarith,False,unsolved goals ⊢ ¬Deficient 0
+not_deficient_zero,.lake/packages/mathlib/Mathlib/NumberTheory/FactorisationProperties.lean,decide,ring,False,unsolved goals ⊢ ¬Deficient 0
+lift_map_liftStar,.lake/packages/mathlib/Mathlib/CategoryTheory/WithTerminal/Basic.lean,rfl,rfl,True,
+lift_map_liftStar,.lake/packages/mathlib/Mathlib/CategoryTheory/WithTerminal/Basic.lean,rfl,decide,False,"Expected type must not contain free variables   (match incl.obj x, star, starTerminal.from (incl.obj x) with     | of a, of a_1, f => F.map (down f)     | of x, star, x_1 => M x   "
+lift_map_liftStar,.lake/packages/mathlib/Mathlib/CategoryTheory/WithTerminal/Basic.lean,rfl,norm_num,False,"unsolved goals C : Type u inst✝¹ : Category.{v, u} C D : Type u_1 inst✝ : Category.{v_1, u_1} D Z : D F : C ⥤ D M : (x : C) → F.obj x ⟶ Z hM : ∀ (x y : C) (f : x ⟶ y), F.map f ≫ M "
+lift_map_liftStar,.lake/packages/mathlib/Mathlib/CategoryTheory/WithTerminal/Basic.lean,rfl,omega,False,"omega could not prove the goal: No usable constraints found. You may need to unfold definitions so `omega` can see linear arithmetic facts about `Nat` and `Int`, which may also inv"
+lift_map_liftStar,.lake/packages/mathlib/Mathlib/CategoryTheory/WithTerminal/Basic.lean,rfl,linarith,False,"unsolved goals C : Type u inst✝¹ : Category.{v, u} C D : Type u_1 inst✝ : Category.{v_1, u_1} D Z : D F : C ⥤ D M : (x : C) → F.obj x ⟶ Z hM : ∀ (x y : C) (f : x ⟶ y), F.map f ≫ M "
+lift_map_liftStar,.lake/packages/mathlib/Mathlib/CategoryTheory/WithTerminal/Basic.lean,rfl,ring,False,"unsolved goals C : Type u inst✝¹ : Category.{v, u} C D : Type u_1 inst✝ : Category.{v_1, u_1} D Z : D F : C ⥤ D M : (x : C) → F.obj x ⟶ Z hM : ∀ (x y : C) (f : x ⟶ y), F.map f ≫ M "
+sbtw_touchpoint_singleton,.lake/packages/mathlib/Mathlib/Geometry/Euclidean/Incenter.lean,decide,rfl,True,
+sbtw_touchpoint_singleton,.lake/packages/mathlib/Mathlib/Geometry/Euclidean/Incenter.lean,decide,decide,True,
+sbtw_touchpoint_singleton,.lake/packages/mathlib/Mathlib/Geometry/Euclidean/Incenter.lean,decide,norm_num,True,
+sbtw_touchpoint_singleton,.lake/packages/mathlib/Mathlib/Geometry/Euclidean/Incenter.lean,decide,omega,True,
+sbtw_touchpoint_singleton,.lake/packages/mathlib/Mathlib/Geometry/Euclidean/Incenter.lean,decide,linarith,True,
+sbtw_touchpoint_singleton,.lake/packages/mathlib/Mathlib/Geometry/Euclidean/Incenter.lean,decide,ring,True,
+weird_seventy,.lake/packages/mathlib/Mathlib/NumberTheory/FactorisationProperties.lean,decide,rfl,False,Tactic `rfl` failed: Expected the goal to be a binary relation  Hint: Reflexivity tactics can only be used on goals of the form `x ~ x` or `R x x`  ⊢ Weird 70
+weird_seventy,.lake/packages/mathlib/Mathlib/NumberTheory/FactorisationProperties.lean,decide,decide,False,maximum recursion depth has been reached use `set_option maxRecDepth <num>` to increase limit use `set_option diagnostics true` to get diagnostic information
+weird_seventy,.lake/packages/mathlib/Mathlib/NumberTheory/FactorisationProperties.lean,decide,norm_num,False,unsolved goals ⊢ Weird 70
+weird_seventy,.lake/packages/mathlib/Mathlib/NumberTheory/FactorisationProperties.lean,decide,omega,False,"omega could not prove the goal: No usable constraints found. You may need to unfold definitions so `omega` can see linear arithmetic facts about `Nat` and `Int`, which may also inv"
+weird_seventy,.lake/packages/mathlib/Mathlib/NumberTheory/FactorisationProperties.lean,decide,linarith,False,unsolved goals ⊢ Weird 70
+weird_seventy,.lake/packages/mathlib/Mathlib/NumberTheory/FactorisationProperties.lean,decide,ring,False,unsolved goals ⊢ Weird 70
+faceSingletonIso_one_hom_comp_,.lake/packages/mathlib/Mathlib/AlgebraicTopology/SimplicialSet/StdSimplex.lean,decide,rfl,False,finisher line not found
+faceSingletonIso_one_hom_comp_,.lake/packages/mathlib/Mathlib/AlgebraicTopology/SimplicialSet/StdSimplex.lean,decide,decide,False,finisher line not found
+faceSingletonIso_one_hom_comp_,.lake/packages/mathlib/Mathlib/AlgebraicTopology/SimplicialSet/StdSimplex.lean,decide,norm_num,False,finisher line not found
+faceSingletonIso_one_hom_comp_,.lake/packages/mathlib/Mathlib/AlgebraicTopology/SimplicialSet/StdSimplex.lean,decide,omega,False,finisher line not found
+faceSingletonIso_one_hom_comp_,.lake/packages/mathlib/Mathlib/AlgebraicTopology/SimplicialSet/StdSimplex.lean,decide,linarith,False,finisher line not found
+faceSingletonIso_one_hom_comp_,.lake/packages/mathlib/Mathlib/AlgebraicTopology/SimplicialSet/StdSimplex.lean,decide,ring,False,finisher line not found
+parts_partition,.lake/packages/mathlib/Mathlib/GroupTheory/Perm/Cycle/Type.lean,decide,rfl,False,Tactic `rfl` failed: Expected the goal to be a binary relation  Hint: Reflexivity tactics can only be used on goals of the form `x ~ x` or `R x x`  α : Type u_1 inst✝¹ : Fintype α 
+parts_partition,.lake/packages/mathlib/Mathlib/GroupTheory/Perm/Cycle/Type.lean,decide,decide,True,
+parts_partition,.lake/packages/mathlib/Mathlib/GroupTheory/Perm/Cycle/Type.lean,decide,norm_num,True,
+parts_partition,.lake/packages/mathlib/Mathlib/GroupTheory/Perm/Cycle/Type.lean,decide,omega,True,
+parts_partition,.lake/packages/mathlib/Mathlib/GroupTheory/Perm/Cycle/Type.lean,decide,linarith,False,unsolved goals α : Type u_1 inst✝¹ : Fintype α inst✝ : DecidableEq α σ : Perm α a : ℕ h : a ∈ Multiset.replicate (Fintype.card α - #σ.support) 1 ⊢ ¬2 ≤ 1
+parts_partition,.lake/packages/mathlib/Mathlib/GroupTheory/Perm/Cycle/Type.lean,decide,ring,False,unsolved goals α : Type u_1 inst✝¹ : Fintype α inst✝ : DecidableEq α σ : Perm α a : ℕ h : a ∈ Multiset.replicate (Fintype.card α - #σ.support) 1 ⊢ ¬2 ≤ 1
+cycleGraph_zero_adj,.lake/packages/mathlib/Mathlib/Combinatorics/SimpleGraph/CycleGraph.lean,decide,rfl,True,
+cycleGraph_zero_adj,.lake/packages/mathlib/Mathlib/Combinatorics/SimpleGraph/CycleGraph.lean,decide,decide,True,
+cycleGraph_zero_adj,.lake/packages/mathlib/Mathlib/Combinatorics/SimpleGraph/CycleGraph.lean,decide,norm_num,True,
+cycleGraph_zero_adj,.lake/packages/mathlib/Mathlib/Combinatorics/SimpleGraph/CycleGraph.lean,decide,omega,True,
+cycleGraph_zero_adj,.lake/packages/mathlib/Mathlib/Combinatorics/SimpleGraph/CycleGraph.lean,decide,linarith,True,
+cycleGraph_zero_adj,.lake/packages/mathlib/Mathlib/Combinatorics/SimpleGraph/CycleGraph.lean,decide,ring,True,
+finiteMultiplicity_X_sub_C,.lake/packages/mathlib/Mathlib/Algebra/Polynomial/Div.lean,decide,rfl,False,Tactic `rfl` failed: The left-hand side   0 is not definitionally equal to the right-hand side   1  R : Type u inst✝ : Ring R p : R[X] a : R h0 : p ≠ 0 this : Nontrivial R ⊢ 0 < 1
+finiteMultiplicity_X_sub_C,.lake/packages/mathlib/Mathlib/Algebra/Polynomial/Div.lean,decide,decide,True,
+finiteMultiplicity_X_sub_C,.lake/packages/mathlib/Mathlib/Algebra/Polynomial/Div.lean,decide,norm_num,True,
+finiteMultiplicity_X_sub_C,.lake/packages/mathlib/Mathlib/Algebra/Polynomial/Div.lean,decide,omega,False,"omega could not prove the goal: No usable constraints found. You may need to unfold definitions so `omega` can see linear arithmetic facts about `Nat` and `Int`, which may also inv"
+finiteMultiplicity_X_sub_C,.lake/packages/mathlib/Mathlib/Algebra/Polynomial/Div.lean,decide,linarith,False,linarith failed to find a contradiction R : Type u inst✝ : Ring R p : R[X] a : R h0 : p ≠ 0 this : Nontrivial R a✝ : 1 ≤ 0 ⊢ False failed
+finiteMultiplicity_X_sub_C,.lake/packages/mathlib/Mathlib/Algebra/Polynomial/Div.lean,decide,ring,False,unsolved goals R : Type u inst✝ : Ring R p : R[X] a : R h0 : p ≠ 0 this : Nontrivial R ⊢ 0 < 1
+not_abundant_zero,.lake/packages/mathlib/Mathlib/NumberTheory/FactorisationProperties.lean,decide,rfl,False,Tactic `rfl` failed: Expected the goal to be a binary relation  Hint: Reflexivity tactics can only be used on goals of the form `x ~ x` or `R x x`  ⊢ ¬Abundant 0
+not_abundant_zero,.lake/packages/mathlib/Mathlib/NumberTheory/FactorisationProperties.lean,decide,decide,True,
+not_abundant_zero,.lake/packages/mathlib/Mathlib/NumberTheory/FactorisationProperties.lean,decide,norm_num,False,unsolved goals ⊢ ¬Abundant 0
+not_abundant_zero,.lake/packages/mathlib/Mathlib/NumberTheory/FactorisationProperties.lean,decide,omega,False,"omega could not prove the goal: No usable constraints found. You may need to unfold definitions so `omega` can see linear arithmetic facts about `Nat` and `Int`, which may also inv"
+not_abundant_zero,.lake/packages/mathlib/Mathlib/NumberTheory/FactorisationProperties.lean,decide,linarith,False,unsolved goals ⊢ ¬Abundant 0
+not_abundant_zero,.lake/packages/mathlib/Mathlib/NumberTheory/FactorisationProperties.lean,decide,ring,False,unsolved goals ⊢ ¬Abundant 0
+bernoulli'_three,.lake/packages/mathlib/Mathlib/NumberTheory/Bernoulli.lean,norm_num,rfl,True,
+bernoulli'_three,.lake/packages/mathlib/Mathlib/NumberTheory/Bernoulli.lean,norm_num,decide,True,
+bernoulli'_three,.lake/packages/mathlib/Mathlib/NumberTheory/Bernoulli.lean,norm_num,norm_num,True,
+bernoulli'_three,.lake/packages/mathlib/Mathlib/NumberTheory/Bernoulli.lean,norm_num,omega,True,
+bernoulli'_three,.lake/packages/mathlib/Mathlib/NumberTheory/Bernoulli.lean,norm_num,linarith,True,
+bernoulli'_three,.lake/packages/mathlib/Mathlib/NumberTheory/Bernoulli.lean,norm_num,ring,True,
+isCarmichael_1105,.lake/packages/mathlib/Mathlib/NumberTheory/CarmichaelNumber.lean,norm_num,rfl,True,
+isCarmichael_1105,.lake/packages/mathlib/Mathlib/NumberTheory/CarmichaelNumber.lean,norm_num,decide,True,
+isCarmichael_1105,.lake/packages/mathlib/Mathlib/NumberTheory/CarmichaelNumber.lean,norm_num,norm_num,True,
+isCarmichael_1105,.lake/packages/mathlib/Mathlib/NumberTheory/CarmichaelNumber.lean,norm_num,omega,True,
+isCarmichael_1105,.lake/packages/mathlib/Mathlib/NumberTheory/CarmichaelNumber.lean,norm_num,linarith,True,
+isCarmichael_1105,.lake/packages/mathlib/Mathlib/NumberTheory/CarmichaelNumber.lean,norm_num,ring,True,
+deficient_two,.lake/packages/mathlib/Mathlib/NumberTheory/FactorisationProperties.lean,decide,rfl,False,Tactic `rfl` failed: Expected the goal to be a binary relation  Hint: Reflexivity tactics can only be used on goals of the form `x ~ x` or `R x x`  ⊢ Deficient 2
+deficient_two,.lake/packages/mathlib/Mathlib/NumberTheory/FactorisationProperties.lean,decide,decide,True,
+deficient_two,.lake/packages/mathlib/Mathlib/NumberTheory/FactorisationProperties.lean,decide,norm_num,False,unsolved goals ⊢ Deficient 2
+deficient_two,.lake/packages/mathlib/Mathlib/NumberTheory/FactorisationProperties.lean,decide,omega,False,"omega could not prove the goal: No usable constraints found. You may need to unfold definitions so `omega` can see linear arithmetic facts about `Nat` and `Int`, which may also inv"
+deficient_two,.lake/packages/mathlib/Mathlib/NumberTheory/FactorisationProperties.lean,decide,linarith,False,unsolved goals ⊢ Deficient 2
+deficient_two,.lake/packages/mathlib/Mathlib/NumberTheory/FactorisationProperties.lean,decide,ring,False,unsolved goals ⊢ Deficient 2
+iccLeftChart_extend_zero,.lake/packages/mathlib/Mathlib/Geometry/Manifold/Instances/Real.lean,norm_num,rfl,True,
+iccLeftChart_extend_zero,.lake/packages/mathlib/Mathlib/Geometry/Manifold/Instances/Real.lean,norm_num,decide,True,
+iccLeftChart_extend_zero,.lake/packages/mathlib/Mathlib/Geometry/Manifold/Instances/Real.lean,norm_num,norm_num,True,
+iccLeftChart_extend_zero,.lake/packages/mathlib/Mathlib/Geometry/Manifold/Instances/Real.lean,norm_num,omega,True,
+iccLeftChart_extend_zero,.lake/packages/mathlib/Mathlib/Geometry/Manifold/Instances/Real.lean,norm_num,linarith,True,
+iccLeftChart_extend_zero,.lake/packages/mathlib/Mathlib/Geometry/Manifold/Instances/Real.lean,norm_num,ring,True,
+fract_mem,.lake/packages/mathlib/Mathlib/Topology/UnitInterval.lean,norm_num,rfl,False,Tactic `rfl` failed: The left-hand side   I is not definitionally equal to the right-hand side   Metric.closedBall 2⁻¹ 2⁻¹  ⊢ I = Metric.closedBall 2⁻¹ 2⁻¹
+fract_mem,.lake/packages/mathlib/Mathlib/Topology/UnitInterval.lean,norm_num,decide,False,Tactic `decide` failed for proposition   I = Metric.closedBall 2⁻¹ 2⁻¹ because its `Decidable` instance   I.decidableEq (Metric.closedBall 2⁻¹ 2⁻¹) did not reduce to `isTrue` or `i
+fract_mem,.lake/packages/mathlib/Mathlib/Topology/UnitInterval.lean,norm_num,norm_num,False,unsolved goals ⊢ I = Metric.closedBall (1 / 2) (1 / 2)
+fract_mem,.lake/packages/mathlib/Mathlib/Topology/UnitInterval.lean,norm_num,omega,False,"omega could not prove the goal: No usable constraints found. You may need to unfold definitions so `omega` can see linear arithmetic facts about `Nat` and `Int`, which may also inv"
+fract_mem,.lake/packages/mathlib/Mathlib/Topology/UnitInterval.lean,norm_num,linarith,False,linarith failed to find a contradiction ⊢ False failed
+fract_mem,.lake/packages/mathlib/Mathlib/Topology/UnitInterval.lean,norm_num,ring,False,unsolved goals ⊢ I = Metric.closedBall (1 / 2) (1 / 2)
+integral_cos_pow_three,.lake/packages/mathlib/Mathlib/Analysis/SpecialFunctions/Integrals/Basic.lean,norm_num,rfl,True,
+integral_cos_pow_three,.lake/packages/mathlib/Mathlib/Analysis/SpecialFunctions/Integrals/Basic.lean,norm_num,decide,True,
+integral_cos_pow_three,.lake/packages/mathlib/Mathlib/Analysis/SpecialFunctions/Integrals/Basic.lean,norm_num,norm_num,True,
+integral_cos_pow_three,.lake/packages/mathlib/Mathlib/Analysis/SpecialFunctions/Integrals/Basic.lean,norm_num,omega,True,
+integral_cos_pow_three,.lake/packages/mathlib/Mathlib/Analysis/SpecialFunctions/Integrals/Basic.lean,norm_num,linarith,True,
+integral_cos_pow_three,.lake/packages/mathlib/Mathlib/Analysis/SpecialFunctions/Integrals/Basic.lean,norm_num,ring,True,
+exp_pi_ne_one,.lake/packages/mathlib/Mathlib/Analysis/Complex/Circle.lean,norm_num,rfl,True,
+exp_pi_ne_one,.lake/packages/mathlib/Mathlib/Analysis/Complex/Circle.lean,norm_num,decide,True,
+exp_pi_ne_one,.lake/packages/mathlib/Mathlib/Analysis/Complex/Circle.lean,norm_num,norm_num,True,
+exp_pi_ne_one,.lake/packages/mathlib/Mathlib/Analysis/Complex/Circle.lean,norm_num,omega,True,
+exp_pi_ne_one,.lake/packages/mathlib/Mathlib/Analysis/Complex/Circle.lean,norm_num,linarith,True,
+exp_pi_ne_one,.lake/packages/mathlib/Mathlib/Analysis/Complex/Circle.lean,norm_num,ring,True,
+transAssocReparamAux_one,.lake/packages/mathlib/Mathlib/AlgebraicTopology/FundamentalGroupoid/Basic.lean,norm_num,rfl,True,
+transAssocReparamAux_one,.lake/packages/mathlib/Mathlib/AlgebraicTopology/FundamentalGroupoid/Basic.lean,norm_num,decide,True,
+transAssocReparamAux_one,.lake/packages/mathlib/Mathlib/AlgebraicTopology/FundamentalGroupoid/Basic.lean,norm_num,norm_num,True,
+transAssocReparamAux_one,.lake/packages/mathlib/Mathlib/AlgebraicTopology/FundamentalGroupoid/Basic.lean,norm_num,omega,True,
+transAssocReparamAux_one,.lake/packages/mathlib/Mathlib/AlgebraicTopology/FundamentalGroupoid/Basic.lean,norm_num,linarith,True,
+transAssocReparamAux_one,.lake/packages/mathlib/Mathlib/AlgebraicTopology/FundamentalGroupoid/Basic.lean,norm_num,ring,True,
+IsLittleO.eventuallyLT_norm_of_eventually_pos,.lake/packages/mathlib/Mathlib/Analysis/Asymptotics/Defs.lean,norm_num,rfl,False,Tactic `rfl` failed: The left-hand side   2⁻¹ is not definitionally equal to the right-hand side   1  α : Type u_1 E : Type u_2 F : Type u_3 f : α → E g : α → F l : Filter α inst✝¹
+IsLittleO.eventuallyLT_norm_of_eventually_pos,.lake/packages/mathlib/Mathlib/Analysis/Asymptotics/Defs.lean,norm_num,decide,False,Tactic `decide` failed for proposition   2⁻¹ < 1 because its `Decidable` instance   2⁻¹.decidableLT 1 did not reduce to `isTrue` or `isFalse`.  After unfolding the instances `Class
+IsLittleO.eventuallyLT_norm_of_eventually_pos,.lake/packages/mathlib/Mathlib/Analysis/Asymptotics/Defs.lean,norm_num,norm_num,True,
+IsLittleO.eventuallyLT_norm_of_eventually_pos,.lake/packages/mathlib/Mathlib/Analysis/Asymptotics/Defs.lean,norm_num,omega,False,"omega could not prove the goal: No usable constraints found. You may need to unfold definitions so `omega` can see linear arithmetic facts about `Nat` and `Int`, which may also inv"
+IsLittleO.eventuallyLT_norm_of_eventually_pos,.lake/packages/mathlib/Mathlib/Analysis/Asymptotics/Defs.lean,norm_num,linarith,True,
+IsLittleO.eventuallyLT_norm_of_eventually_pos,.lake/packages/mathlib/Mathlib/Analysis/Asymptotics/Defs.lean,norm_num,ring,False,"unsolved goals α : Type u_1 E : Type u_2 F : Type u_3 f : α → E g : α → F l : Filter α inst✝¹ : Norm E inst✝ : Norm F h : f =o[l] g hg : ∀ᶠ (x : α) in l, 0 < ‖g x‖ x : α x✝ : ‖f x‖"
+SeminormedAddCommGroup.lipschitzWith_sub,.lake/packages/mathlib/Mathlib/Topology/Bornology/BoundedOperation.lean,norm_num,rfl,False,Tactic `rfl` failed: The left-hand side   2 is not definitionally equal to the right-hand side   1 + 1  case e'_5 R : Type u_1 inst✝ : SeminormedAddCommGroup R ⊢ 2 = 1 + 1
+SeminormedAddCommGroup.lipschitzWith_sub,.lake/packages/mathlib/Mathlib/Topology/Bornology/BoundedOperation.lean,norm_num,decide,False,Tactic `decide` failed for proposition   2 = 1 + 1 because its `Decidable` instance   LinearOrder.toDecidableEq 2 (1 + 1) did not reduce to `isTrue` or `isFalse`.  After unfolding 
+SeminormedAddCommGroup.lipschitzWith_sub,.lake/packages/mathlib/Mathlib/Topology/Bornology/BoundedOperation.lean,norm_num,norm_num,True,
+SeminormedAddCommGroup.lipschitzWith_sub,.lake/packages/mathlib/Mathlib/Topology/Bornology/BoundedOperation.lean,norm_num,omega,False,"omega could not prove the goal: No usable constraints found. You may need to unfold definitions so `omega` can see linear arithmetic facts about `Nat` and `Int`, which may also inv"
+SeminormedAddCommGroup.lipschitzWith_sub,.lake/packages/mathlib/Mathlib/Topology/Bornology/BoundedOperation.lean,norm_num,linarith,False,linarith failed to find a contradiction case e'_5.h1 R : Type u_1 inst✝ : SeminormedAddCommGroup R a✝ : 2 < 1 + 1 ⊢ False failed
+SeminormedAddCommGroup.lipschitzWith_sub,.lake/packages/mathlib/Mathlib/Topology/Bornology/BoundedOperation.lean,norm_num,ring,True,
+finrank_quotient_sup_span_singleton,.lake/packages/mathlib/Mathlib/LinearAlgebra/Transvection/Generation.lean,omega,rfl,True,
+finrank_quotient_sup_span_singleton,.lake/packages/mathlib/Mathlib/LinearAlgebra/Transvection/Generation.lean,omega,decide,True,
+finrank_quotient_sup_span_singleton,.lake/packages/mathlib/Mathlib/LinearAlgebra/Transvection/Generation.lean,omega,norm_num,True,
+finrank_quotient_sup_span_singleton,.lake/packages/mathlib/Mathlib/LinearAlgebra/Transvection/Generation.lean,omega,omega,True,
+finrank_quotient_sup_span_singleton,.lake/packages/mathlib/Mathlib/LinearAlgebra/Transvection/Generation.lean,omega,linarith,True,
+finrank_quotient_sup_span_singleton,.lake/packages/mathlib/Mathlib/LinearAlgebra/Transvection/Generation.lean,omega,ring,True,
+catalan_three,.lake/packages/mathlib/Mathlib/Combinatorics/Enumerative/Catalan/Basic.lean,norm_num,rfl,False,Tactic `rfl` failed: The left-hand side   catalan 3 is not definitionally equal to the right-hand side   5  ⊢ catalan 3 = 5
+catalan_three,.lake/packages/mathlib/Mathlib/Combinatorics/Enumerative/Catalan/Basic.lean,norm_num,decide,False,Tactic `decide` failed for proposition   catalan 3 = 5 because its `Decidable` instance   instDecidableEqNat (catalan 3) 5 did not reduce to `isTrue` or `isFalse`.  After unfolding
+catalan_three,.lake/packages/mathlib/Mathlib/Combinatorics/Enumerative/Catalan/Basic.lean,norm_num,norm_num,False,unsolved goals ⊢ catalan 3 = 5
+catalan_three,.lake/packages/mathlib/Mathlib/Combinatorics/Enumerative/Catalan/Basic.lean,norm_num,omega,False,omega could not prove the goal: a possible counterexample may satisfy the constraints   0 ≤ a ≤ 4 where  a := ↑(catalan 3)
+catalan_three,.lake/packages/mathlib/Mathlib/Combinatorics/Enumerative/Catalan/Basic.lean,norm_num,linarith,False,linarith failed to find a contradiction case h1 a✝ : catalan 3 < 5 ⊢ False failed
+catalan_three,.lake/packages/mathlib/Mathlib/Combinatorics/Enumerative/Catalan/Basic.lean,norm_num,ring,False,unsolved goals ⊢ catalan 3 = 5
+Finset.Ico_succ_succ,.lake/packages/mathlib/Mathlib/Data/Int/Interval.lean,omega,rfl,False,Tactic `rfl` failed: The left-hand side   -(↑m + 1) ≤ a✝ ∧ a✝ < ↑n + 1 is not definitionally equal to the right-hand side   a✝ = -(↑m + 1) ∨ a✝ = ↑n ∨ -↑m ≤ a✝ ∧ a✝ < ↑n  m n : ℕ a
+Finset.Ico_succ_succ,.lake/packages/mathlib/Mathlib/Data/Int/Interval.lean,omega,decide,False,Expected type must not contain free variables   -(↑m + 1) ≤ a✝ ∧ a✝ < ↑n + 1 ↔ a✝ = -(↑m + 1) ∨ a✝ = ↑n ∨ -↑m ≤ a✝ ∧ a✝ < ↑n  Hint: Use the `+revert` option to automatically clean 
+Finset.Ico_succ_succ,.lake/packages/mathlib/Mathlib/Data/Int/Interval.lean,omega,norm_num,False,unsolved goals m n : ℕ a✝ : ℤ ⊢ -(↑m + 1) ≤ a✝ ∧ a✝ < ↑n + 1 ↔ a✝ = -(↑m + 1) ∨ a✝ = ↑n ∨ -↑m ≤ a✝ ∧ a✝ < ↑n
+Finset.Ico_succ_succ,.lake/packages/mathlib/Mathlib/Data/Int/Interval.lean,omega,omega,True,
+Finset.Ico_succ_succ,.lake/packages/mathlib/Mathlib/Data/Int/Interval.lean,omega,linarith,False,unsolved goals m n : ℕ a✝ : ℤ ⊢ -(↑m + 1) ≤ a✝ ∧ a✝ < ↑n + 1 ↔ a✝ = -(↑m + 1) ∨ a✝ = ↑n ∨ -↑m ≤ a✝ ∧ a✝ < ↑n
+Finset.Ico_succ_succ,.lake/packages/mathlib/Mathlib/Data/Int/Interval.lean,omega,ring,False,unsolved goals m n : ℕ a✝ : ℤ ⊢ -(↑m + 1) ≤ a✝ ∧ a✝ < ↑n + 1 ↔ a✝ = -(↑m + 1) ∨ a✝ = ↑n ∨ -↑m ≤ a✝ ∧ a✝ < ↑n
+valMinAbs_natAbs_eq_min,.lake/packages/mathlib/Mathlib/Data/ZMod/ValMinAbs.lean,omega,rfl,False,Tactic `rfl` failed: The left-hand side   (if a.val ≤ n / 2 then ↑a.val else ↑a.val - ↑n).natAbs is not definitionally equal to the right-hand side   min a.val (n - a.val)  n : ℕ h
+valMinAbs_natAbs_eq_min,.lake/packages/mathlib/Mathlib/Data/ZMod/ValMinAbs.lean,omega,decide,False,Expected type must not contain free variables   (if a.val ≤ n / 2 then ↑a.val else ↑a.val - ↑n).natAbs = min a.val (n - a.val)  Hint: Use the `+revert` option to automatically clea
+valMinAbs_natAbs_eq_min,.lake/packages/mathlib/Mathlib/Data/ZMod/ValMinAbs.lean,omega,norm_num,False,unsolved goals n : ℕ hpos : NeZero n a : ZMod n this : a.val < n ⊢ (if a.val ≤ n / 2 then a.cast else a.cast - ↑n).natAbs = min a.val (n - a.val)
+valMinAbs_natAbs_eq_min,.lake/packages/mathlib/Mathlib/Data/ZMod/ValMinAbs.lean,omega,omega,True,
+valMinAbs_natAbs_eq_min,.lake/packages/mathlib/Mathlib/Data/ZMod/ValMinAbs.lean,omega,linarith,False,linarith failed to find a contradiction case h1 n : ℕ hpos : NeZero n a : ZMod n this : a.val < n a✝ : (if a.val ≤ n / 2 then ↑a.val else ↑a.val - ↑n).natAbs < min a.val (n - a.val
+valMinAbs_natAbs_eq_min,.lake/packages/mathlib/Mathlib/Data/ZMod/ValMinAbs.lean,omega,ring,False,unsolved goals n : ℕ hpos : NeZero n a : ZMod n this : a.val < n ⊢ (if a.val ≤ n / 2 then ↑a.val else ↑a.val - ↑n).natAbs = min a.val (n - a.val)
+ne_zero_of_inner_self_ne_zero,.lake/packages/mathlib/Mathlib/Analysis/InnerProductSpace/Defs.lean,norm_num,rfl,False,"Tactic `rfl` failed: The left-hand side   ↑(re ⟪x, x⟫) is not definitionally equal to the right-hand side   ⟪x, x⟫  𝕜 : Type u_1 F : Type u_3 inst✝² : RCLike 𝕜 inst✝¹ : AddCommGrou"
+ne_zero_of_inner_self_ne_zero,.lake/packages/mathlib/Mathlib/Analysis/InnerProductSpace/Defs.lean,norm_num,decide,False,"Expected type must not contain free variables   ↑(re ⟪x, x⟫) = ⟪x, x⟫  Hint: Use the `+revert` option to automatically clean up and revert free variables"
+ne_zero_of_inner_self_ne_zero,.lake/packages/mathlib/Mathlib/Analysis/InnerProductSpace/Defs.lean,norm_num,norm_num,False,"unsolved goals 𝕜 : Type u_1 F : Type u_3 inst✝² : RCLike 𝕜 inst✝¹ : AddCommGroup F inst✝ : Module 𝕜 F c : PreInnerProductSpace.Core 𝕜 F x : F ⊢ ↑(re ⟪x, x⟫) = ⟪x, x⟫"
+ne_zero_of_inner_self_ne_zero,.lake/packages/mathlib/Mathlib/Analysis/InnerProductSpace/Defs.lean,norm_num,omega,False,"omega could not prove the goal: No usable constraints found. You may need to unfold definitions so `omega` can see linear arithmetic facts about `Nat` and `Int`, which may also inv"
+ne_zero_of_inner_self_ne_zero,.lake/packages/mathlib/Mathlib/Analysis/InnerProductSpace/Defs.lean,norm_num,linarith,False,linarith failed to find a contradiction 𝕜 : Type u_1 F : Type u_3 inst✝² : RCLike 𝕜 inst✝¹ : AddCommGroup F inst✝ : Module 𝕜 F c : PreInnerProductSpace.Core 𝕜 F x : F ⊢ False faile
+ne_zero_of_inner_self_ne_zero,.lake/packages/mathlib/Mathlib/Analysis/InnerProductSpace/Defs.lean,norm_num,ring,False,`ring_nf` made no progress on the goal
+one_sub_prime_cpow_ne_zero,.lake/packages/mathlib/Mathlib/Analysis/SpecialFunctions/Pow/Real.lean,norm_num,rfl,False,Tactic `rfl` failed: Expected the goal to be a binary relation  Hint: Reflexivity tactics can only be used on goals of the form `x ~ x` or `R x x`  p : ℕ hp : Nat.Prime p s : ℂ hs 
+one_sub_prime_cpow_ne_zero,.lake/packages/mathlib/Mathlib/Analysis/SpecialFunctions/Pow/Real.lean,norm_num,decide,False,Tactic `decide` proved that the proposition   False is false
+one_sub_prime_cpow_ne_zero,.lake/packages/mathlib/Mathlib/Analysis/SpecialFunctions/Pow/Real.lean,norm_num,norm_num,False,unsolved goals p : ℕ hp : Nat.Prime p s : ℂ hs : 1 < s.re H : 1 = ↑p ^ (-s) this : 1 ≤ 1 / 2 ⊢ False
+one_sub_prime_cpow_ne_zero,.lake/packages/mathlib/Mathlib/Analysis/SpecialFunctions/Pow/Real.lean,norm_num,omega,False,"omega could not prove the goal: No usable constraints found. You may need to unfold definitions so `omega` can see linear arithmetic facts about `Nat` and `Int`, which may also inv"
+one_sub_prime_cpow_ne_zero,.lake/packages/mathlib/Mathlib/Analysis/SpecialFunctions/Pow/Real.lean,norm_num,linarith,True,
+one_sub_prime_cpow_ne_zero,.lake/packages/mathlib/Mathlib/Analysis/SpecialFunctions/Pow/Real.lean,norm_num,ring,False,`ring_nf` made no progress on the goal
+primeCounting_add_le,.lake/packages/mathlib/Mathlib/NumberTheory/PrimeCounting.lean,omega,rfl,True,
+primeCounting_add_le,.lake/packages/mathlib/Mathlib/NumberTheory/PrimeCounting.lean,omega,decide,True,
+primeCounting_add_le,.lake/packages/mathlib/Mathlib/NumberTheory/PrimeCounting.lean,omega,norm_num,True,
+primeCounting_add_le,.lake/packages/mathlib/Mathlib/NumberTheory/PrimeCounting.lean,omega,omega,True,
+primeCounting_add_le,.lake/packages/mathlib/Mathlib/NumberTheory/PrimeCounting.lean,omega,linarith,True,
+primeCounting_add_le,.lake/packages/mathlib/Mathlib/NumberTheory/PrimeCounting.lean,omega,ring,True,
+intervalGapsWithin_fst_of_lt_lt,.lake/packages/mathlib/Mathlib/Order/Interval/Finset/Gaps.lean,omega,rfl,False,Tactic `rfl` failed: The left-hand side   j is not definitionally equal to the right-hand side   (j - 1).succ  α : Type u_1 inst✝ : LinearOrder α F : Finset (α × α) k : ℕ h : #F = 
+intervalGapsWithin_fst_of_lt_lt,.lake/packages/mathlib/Mathlib/Order/Interval/Finset/Gaps.lean,omega,decide,False,Expected type must not contain free variables   j = (j - 1).succ  Hint: Use the `+revert` option to automatically clean up and revert free variables
+intervalGapsWithin_fst_of_lt_lt,.lake/packages/mathlib/Mathlib/Order/Interval/Finset/Gaps.lean,omega,norm_num,False,unsolved goals α : Type u_1 inst✝ : LinearOrder α F : Finset (α × α) k : ℕ h : #F = k a b : α j : ℕ hj₁ : 0 < j hj₂ : j - 1 < k ⊢ j = (j - 1).succ
+intervalGapsWithin_fst_of_lt_lt,.lake/packages/mathlib/Mathlib/Order/Interval/Finset/Gaps.lean,omega,omega,True,
+intervalGapsWithin_fst_of_lt_lt,.lake/packages/mathlib/Mathlib/Order/Interval/Finset/Gaps.lean,omega,linarith,False,unsolved goals α : Type u_1 inst✝ : LinearOrder α F : Finset (α × α) k : ℕ h : #F = k a b : α j : ℕ hj₁ : 0 < j hj₂ : j - 1 < k ⊢ j = (j - 1).succ
+intervalGapsWithin_fst_of_lt_lt,.lake/packages/mathlib/Mathlib/Order/Interval/Finset/Gaps.lean,omega,ring,False,unsolved goals α : Type u_1 inst✝ : LinearOrder α F : Finset (α × α) k : ℕ h : #F = k a b : α j : ℕ hj₁ : 0 < j hj₂ : j - 1 < k ⊢ j = (j - 1).succ
+val_sub_castLT_of_lt,.lake/packages/mathlib/Mathlib/Data/Fin/SuccPred.lean,omega,rfl,False,Tactic `rfl` failed: The left-hand side   n - ↑b + ↑a is not definitionally equal to the right-hand side   m - ↑b + ↑a + n - m  n m : ℕ a b : Fin m hb : ↑b < n h : a < b h' : ↑a < 
+val_sub_castLT_of_lt,.lake/packages/mathlib/Mathlib/Data/Fin/SuccPred.lean,omega,decide,False,Expected type must not contain free variables   n - ↑b + ↑a = m - ↑b + ↑a + n - m  Hint: Use the `+revert` option to automatically clean up and revert free variables
+val_sub_castLT_of_lt,.lake/packages/mathlib/Mathlib/Data/Fin/SuccPred.lean,omega,norm_num,False,unsolved goals n m : ℕ a b : Fin m hb : ↑b < n h : a < b h' : ↑a < ↑b ⊢ n - ↑b + ↑a = m - ↑b + ↑a + n - m
+val_sub_castLT_of_lt,.lake/packages/mathlib/Mathlib/Data/Fin/SuccPred.lean,omega,omega,True,
+val_sub_castLT_of_lt,.lake/packages/mathlib/Mathlib/Data/Fin/SuccPred.lean,omega,linarith,False,unsolved goals n m : ℕ a b : Fin m hb : ↑b < n h : a < b h' : ↑a < ↑b ⊢ n - ↑b + ↑a = m - ↑b + ↑a + n - m
+val_sub_castLT_of_lt,.lake/packages/mathlib/Mathlib/Data/Fin/SuccPred.lean,omega,ring,False,unsolved goals n m : ℕ a b : Fin m hb : ↑b < n h : a < b h' : ↑a < ↑b ⊢ n - ↑b + ↑a = m - ↑b + ↑a + n - m
+coe_int_add_eq_mod,.lake/packages/mathlib/Mathlib/Data/Fin/Basic.lean,omega,rfl,True,
+coe_int_add_eq_mod,.lake/packages/mathlib/Mathlib/Data/Fin/Basic.lean,omega,decide,False,Expected type must not contain free variables   ↑↑(u + v) = (↑↑u + ↑↑v) % ↑n  Hint: Use the `+revert` option to automatically clean up and revert free variables
+coe_int_add_eq_mod,.lake/packages/mathlib/Mathlib/Data/Fin/Basic.lean,omega,norm_num,False,unsolved goals n : ℕ u v : Fin n ⊢ ↑↑(u + v) = (↑↑u + ↑↑v) % ↑n
+coe_int_add_eq_mod,.lake/packages/mathlib/Mathlib/Data/Fin/Basic.lean,omega,omega,True,
+coe_int_add_eq_mod,.lake/packages/mathlib/Mathlib/Data/Fin/Basic.lean,omega,linarith,False,unsolved goals n : ℕ u v : Fin n ⊢ ↑↑(u + v) = (↑↑u + ↑↑v) % ↑n
+coe_int_add_eq_mod,.lake/packages/mathlib/Mathlib/Data/Fin/Basic.lean,omega,ring,False,unsolved goals n : ℕ u v : Fin n ⊢ ↑↑(u + v) = (↑↑u + ↑↑v) % ↑n
+Icc_eq_pair,.lake/packages/mathlib/Mathlib/Data/Int/Interval.lean,omega,rfl,False,Tactic `rfl` failed: The left-hand side   a ≤ a✝ ∧ a✝ ≤ a + 1 is not definitionally equal to the right-hand side   a✝ = a ∨ a✝ = a + 1  a a✝ : ℤ ⊢ a ≤ a✝ ∧ a✝ ≤ a + 1 ↔ a✝ = a ∨ a✝
+Icc_eq_pair,.lake/packages/mathlib/Mathlib/Data/Int/Interval.lean,omega,decide,False,Expected type must not contain free variables   a ≤ a✝ ∧ a✝ ≤ a + 1 ↔ a✝ = a ∨ a✝ = a + 1  Hint: Use the `+revert` option to automatically clean up and revert free variables
+Icc_eq_pair,.lake/packages/mathlib/Mathlib/Data/Int/Interval.lean,omega,norm_num,False,unsolved goals a a✝ : ℤ ⊢ a ≤ a✝ ∧ a✝ ≤ a + 1 ↔ a✝ = a ∨ a✝ = a + 1
+Icc_eq_pair,.lake/packages/mathlib/Mathlib/Data/Int/Interval.lean,omega,omega,True,
+Icc_eq_pair,.lake/packages/mathlib/Mathlib/Data/Int/Interval.lean,omega,linarith,False,unsolved goals a a✝ : ℤ ⊢ a ≤ a✝ ∧ a✝ ≤ a + 1 ↔ a✝ = a ∨ a✝ = a + 1
+Icc_eq_pair,.lake/packages/mathlib/Mathlib/Data/Int/Interval.lean,omega,ring,False,unsolved goals a a✝ : ℤ ⊢ a ≤ a✝ ∧ a✝ ≤ a + 1 ↔ a✝ = a ∨ a✝ = a + 1
+Finset.Icc_succ_succ,.lake/packages/mathlib/Mathlib/Data/Int/Interval.lean,omega,rfl,False,Tactic `rfl` failed: The left-hand side   -(↑m + 1) ≤ a✝ ∧ a✝ ≤ ↑n + 1 is not definitionally equal to the right-hand side   a✝ = -(↑m + 1) ∨ a✝ = ↑n + 1 ∨ -↑m ≤ a✝ ∧ a✝ ≤ ↑n  m n :
+Finset.Icc_succ_succ,.lake/packages/mathlib/Mathlib/Data/Int/Interval.lean,omega,decide,False,Expected type must not contain free variables   -(↑m + 1) ≤ a✝ ∧ a✝ ≤ ↑n + 1 ↔ a✝ = -(↑m + 1) ∨ a✝ = ↑n + 1 ∨ -↑m ≤ a✝ ∧ a✝ ≤ ↑n  Hint: Use the `+revert` option to automatically cl
+Finset.Icc_succ_succ,.lake/packages/mathlib/Mathlib/Data/Int/Interval.lean,omega,norm_num,False,unsolved goals m n : ℕ a✝ : ℤ ⊢ -(↑m + 1) ≤ a✝ ∧ a✝ ≤ ↑n + 1 ↔ a✝ = -(↑m + 1) ∨ a✝ = ↑n + 1 ∨ -↑m ≤ a✝ ∧ a✝ ≤ ↑n
+Finset.Icc_succ_succ,.lake/packages/mathlib/Mathlib/Data/Int/Interval.lean,omega,omega,True,
+Finset.Icc_succ_succ,.lake/packages/mathlib/Mathlib/Data/Int/Interval.lean,omega,linarith,False,unsolved goals m n : ℕ a✝ : ℤ ⊢ -(↑m + 1) ≤ a✝ ∧ a✝ ≤ ↑n + 1 ↔ a✝ = -(↑m + 1) ∨ a✝ = ↑n + 1 ∨ -↑m ≤ a✝ ∧ a✝ ≤ ↑n
+Finset.Icc_succ_succ,.lake/packages/mathlib/Mathlib/Data/Int/Interval.lean,omega,ring,False,unsolved goals m n : ℕ a✝ : ℤ ⊢ -(↑m + 1) ≤ a✝ ∧ a✝ ≤ ↑n + 1 ↔ a✝ = -(↑m + 1) ∨ a✝ = ↑n + 1 ∨ -↑m ≤ a✝ ∧ a✝ ≤ ↑n
+proj_comp,.lake/packages/mathlib/Mathlib/Analysis/Normed/Module/Bases.lean,omega,rfl,True,
+proj_comp,.lake/packages/mathlib/Mathlib/Analysis/Normed/Module/Bases.lean,omega,decide,True,
+proj_comp,.lake/packages/mathlib/Mathlib/Analysis/Normed/Module/Bases.lean,omega,norm_num,True,
+proj_comp,.lake/packages/mathlib/Mathlib/Analysis/Normed/Module/Bases.lean,omega,omega,True,
+proj_comp,.lake/packages/mathlib/Mathlib/Analysis/Normed/Module/Bases.lean,omega,linarith,True,
+proj_comp,.lake/packages/mathlib/Mathlib/Analysis/Normed/Module/Bases.lean,omega,ring,True,
+prod_Icc_div,.lake/packages/mathlib/Mathlib/Algebra/BigOperators/Intervals.lean,omega,rfl,False,Tactic `rfl` failed: The left-hand side   m is not definitionally equal to the right-hand side   n + 1  case hmn M : Type u_4 m n : ℕ inst✝ : CommGroup M hmn : m ≤ n f : ℕ → M ⊢ m 
+prod_Icc_div,.lake/packages/mathlib/Mathlib/Algebra/BigOperators/Intervals.lean,omega,decide,False,Expected type must not contain free variables   m ≤ n + 1  Hint: Use the `+revert` option to automatically clean up and revert free variables
+prod_Icc_div,.lake/packages/mathlib/Mathlib/Algebra/BigOperators/Intervals.lean,omega,norm_num,False,unsolved goals case hmn M : Type u_4 m n : ℕ inst✝ : CommGroup M hmn : m ≤ n f : ℕ → M ⊢ m ≤ n + 1
+prod_Icc_div,.lake/packages/mathlib/Mathlib/Algebra/BigOperators/Intervals.lean,omega,omega,True,
+prod_Icc_div,.lake/packages/mathlib/Mathlib/Algebra/BigOperators/Intervals.lean,omega,linarith,False,unsolved goals case hmn M : Type u_4 m n : ℕ inst✝ : CommGroup M hmn : m ≤ n f : ℕ → M ⊢ m ≤ n + 1
+prod_Icc_div,.lake/packages/mathlib/Mathlib/Algebra/BigOperators/Intervals.lean,omega,ring,False,unsolved goals case hmn M : Type u_4 m n : ℕ inst✝ : CommGroup M hmn : m ≤ n f : ℕ → M ⊢ m ≤ n + 1
+bernoulliFun_eval_half_eq_zero,.lake/packages/mathlib/Mathlib/NumberTheory/ZetaValues.lean,linarith,rfl,True,
+bernoulliFun_eval_half_eq_zero,.lake/packages/mathlib/Mathlib/NumberTheory/ZetaValues.lean,linarith,decide,True,
+bernoulliFun_eval_half_eq_zero,.lake/packages/mathlib/Mathlib/NumberTheory/ZetaValues.lean,linarith,norm_num,True,
+bernoulliFun_eval_half_eq_zero,.lake/packages/mathlib/Mathlib/NumberTheory/ZetaValues.lean,linarith,omega,True,
+bernoulliFun_eval_half_eq_zero,.lake/packages/mathlib/Mathlib/NumberTheory/ZetaValues.lean,linarith,linarith,True,
+bernoulliFun_eval_half_eq_zero,.lake/packages/mathlib/Mathlib/NumberTheory/ZetaValues.lean,linarith,ring,True,
+of_iUnion_nonneg,.lake/packages/mathlib/Mathlib/MeasureTheory/VectorMeasure/Basic.lean,linarith,rfl,True,
+of_iUnion_nonneg,.lake/packages/mathlib/Mathlib/MeasureTheory/VectorMeasure/Basic.lean,linarith,decide,True,
+of_iUnion_nonneg,.lake/packages/mathlib/Mathlib/MeasureTheory/VectorMeasure/Basic.lean,linarith,norm_num,True,
+of_iUnion_nonneg,.lake/packages/mathlib/Mathlib/MeasureTheory/VectorMeasure/Basic.lean,linarith,omega,True,
+of_iUnion_nonneg,.lake/packages/mathlib/Mathlib/MeasureTheory/VectorMeasure/Basic.lean,linarith,linarith,True,
+of_iUnion_nonneg,.lake/packages/mathlib/Mathlib/MeasureTheory/VectorMeasure/Basic.lean,linarith,ring,True,
+A_mono,.lake/packages/mathlib/Mathlib/Analysis/Calculus/FDeriv/Measurable.lean,linarith,rfl,True,
+A_mono,.lake/packages/mathlib/Mathlib/Analysis/Calculus/FDeriv/Measurable.lean,linarith,decide,True,
+A_mono,.lake/packages/mathlib/Mathlib/Analysis/Calculus/FDeriv/Measurable.lean,linarith,norm_num,True,
+A_mono,.lake/packages/mathlib/Mathlib/Analysis/Calculus/FDeriv/Measurable.lean,linarith,omega,True,
+A_mono,.lake/packages/mathlib/Mathlib/Analysis/Calculus/FDeriv/Measurable.lean,linarith,linarith,True,
+A_mono,.lake/packages/mathlib/Mathlib/Analysis/Calculus/FDeriv/Measurable.lean,linarith,ring,True,
+IsTangentAt.angle_eq_pi_div_two,.lake/packages/mathlib/Mathlib/Geometry/Euclidean/Angle/Sphere.lean,linarith,rfl,True,
+IsTangentAt.angle_eq_pi_div_two,.lake/packages/mathlib/Mathlib/Geometry/Euclidean/Angle/Sphere.lean,linarith,decide,True,
+IsTangentAt.angle_eq_pi_div_two,.lake/packages/mathlib/Mathlib/Geometry/Euclidean/Angle/Sphere.lean,linarith,norm_num,True,
+IsTangentAt.angle_eq_pi_div_two,.lake/packages/mathlib/Mathlib/Geometry/Euclidean/Angle/Sphere.lean,linarith,omega,True,
+IsTangentAt.angle_eq_pi_div_two,.lake/packages/mathlib/Mathlib/Geometry/Euclidean/Angle/Sphere.lean,linarith,linarith,True,
+IsTangentAt.angle_eq_pi_div_two,.lake/packages/mathlib/Mathlib/Geometry/Euclidean/Angle/Sphere.lean,linarith,ring,True,
+dist_ne,.lake/packages/mathlib/Mathlib/Topology/MetricSpace/Gluing.lean,linarith,rfl,False,Tactic `rfl` failed: The left-hand side   1 is not definitionally equal to the right-hand side   dist x ⋯.some + 1 + dist ⋯.some y  ι : Type u_1 E : ι → Type u_2 inst✝ : (i : ι) → 
+dist_ne,.lake/packages/mathlib/Mathlib/Topology/MetricSpace/Gluing.lean,linarith,decide,False,Expected type must not contain free variables   1 ≤ dist x ⋯.some + 1 + dist ⋯.some y  Hint: Use the `+revert` option to automatically clean up and revert free variables
+dist_ne,.lake/packages/mathlib/Mathlib/Topology/MetricSpace/Gluing.lean,linarith,norm_num,False,unsolved goals ι : Type u_1 E : ι → Type u_2 inst✝ : (i : ι) → MetricSpace (E i) i j : ι h : i ≠ j x : E i y : E j ⊢ 1 ≤ dist x ⋯.some + 1 + dist ⋯.some y
+dist_ne,.lake/packages/mathlib/Mathlib/Topology/MetricSpace/Gluing.lean,linarith,omega,False,"omega could not prove the goal: No usable constraints found. You may need to unfold definitions so `omega` can see linear arithmetic facts about `Nat` and `Int`, which may also inv"
+dist_ne,.lake/packages/mathlib/Mathlib/Topology/MetricSpace/Gluing.lean,linarith,linarith,False,linarith failed to find a contradiction ι : Type u_1 E : ι → Type u_2 inst✝ : (i : ι) → MetricSpace (E i) i j : ι h : i ≠ j x : E i y : E j a✝ : dist x ⋯.some + 1 + dist ⋯.some y <
+dist_ne,.lake/packages/mathlib/Mathlib/Topology/MetricSpace/Gluing.lean,linarith,ring,False,unsolved goals ι : Type u_1 E : ι → Type u_2 inst✝ : (i : ι) → MetricSpace (E i) i j : ι h : i ≠ j x : E i y : E j ⊢ 1 ≤ 1 + dist x ⋯.some + dist ⋯.some y
+arithGeom_strictMono,.lake/packages/mathlib/Mathlib/Analysis/SpecificLimits/ArithmeticGeometric.lean,linarith,rfl,False,Tactic `rfl` failed: The left-hand side   arithGeom a b u₀ n is not definitionally equal to the right-hand side   a * arithGeom a b u₀ n + b  R : Type u_1 a b u₀ : R inst✝² : Field
+arithGeom_strictMono,.lake/packages/mathlib/Mathlib/Analysis/SpecificLimits/ArithmeticGeometric.lean,linarith,decide,False,Expected type must not contain free variables   arithGeom a b u₀ n < a * arithGeom a b u₀ n + b  Hint: Use the `+revert` option to automatically clean up and revert free variables
+arithGeom_strictMono,.lake/packages/mathlib/Mathlib/Analysis/SpecificLimits/ArithmeticGeometric.lean,linarith,norm_num,False,unsolved goals R : Type u_1 a b u₀ : R inst✝² : Field R inst✝¹ : LinearOrder R inst✝ : IsStrictOrderedRing R ha : 1 < a h0 : b / (1 - a) < u₀ n : ℕ h_lt : arithGeom a b u₀ n * (1 -
+arithGeom_strictMono,.lake/packages/mathlib/Mathlib/Analysis/SpecificLimits/ArithmeticGeometric.lean,linarith,omega,False,"omega could not prove the goal: No usable constraints found. You may need to unfold definitions so `omega` can see linear arithmetic facts about `Nat` and `Int`, which may also inv"
+arithGeom_strictMono,.lake/packages/mathlib/Mathlib/Analysis/SpecificLimits/ArithmeticGeometric.lean,linarith,linarith,True,
+arithGeom_strictMono,.lake/packages/mathlib/Mathlib/Analysis/SpecificLimits/ArithmeticGeometric.lean,linarith,ring,False,`ring_nf` made no progress on the goal
+natDegree_pre,.lake/packages/mathlib/Mathlib/AlgebraicGeometry/EllipticCurve/DivisionPolynomial/Degree.lean,linarith,rfl,False,finisher line not found
+natDegree_pre,.lake/packages/mathlib/Mathlib/AlgebraicGeometry/EllipticCurve/DivisionPolynomial/Degree.lean,linarith,decide,False,finisher line not found
+natDegree_pre,.lake/packages/mathlib/Mathlib/AlgebraicGeometry/EllipticCurve/DivisionPolynomial/Degree.lean,linarith,norm_num,False,finisher line not found
+natDegree_pre,.lake/packages/mathlib/Mathlib/AlgebraicGeometry/EllipticCurve/DivisionPolynomial/Degree.lean,linarith,omega,False,finisher line not found
+natDegree_pre,.lake/packages/mathlib/Mathlib/AlgebraicGeometry/EllipticCurve/DivisionPolynomial/Degree.lean,linarith,linarith,False,finisher line not found
+natDegree_pre,.lake/packages/mathlib/Mathlib/AlgebraicGeometry/EllipticCurve/DivisionPolynomial/Degree.lean,linarith,ring,False,finisher line not found
+IccRightChart_apply,.lake/packages/mathlib/Mathlib/Geometry/Manifold/Instances/Real.lean,linarith,rfl,True,
+IccRightChart_apply,.lake/packages/mathlib/Mathlib/Geometry/Manifold/Instances/Real.lean,linarith,decide,True,
+IccRightChart_apply,.lake/packages/mathlib/Mathlib/Geometry/Manifold/Instances/Real.lean,linarith,norm_num,True,
+IccRightChart_apply,.lake/packages/mathlib/Mathlib/Geometry/Manifold/Instances/Real.lean,linarith,omega,True,
+IccRightChart_apply,.lake/packages/mathlib/Mathlib/Geometry/Manifold/Instances/Real.lean,linarith,linarith,True,
+IccRightChart_apply,.lake/packages/mathlib/Mathlib/Geometry/Manifold/Instances/Real.lean,linarith,ring,True,
+le_one_add_finrank_fixedSubmodule_mul_dilatransvection,.lake/packages/mathlib/Mathlib/LinearAlgebra/Transvection/Generation.lean,linarith,rfl,True,
+le_one_add_finrank_fixedSubmodule_mul_dilatransvection,.lake/packages/mathlib/Mathlib/LinearAlgebra/Transvection/Generation.lean,linarith,decide,True,
+le_one_add_finrank_fixedSubmodule_mul_dilatransvection,.lake/packages/mathlib/Mathlib/LinearAlgebra/Transvection/Generation.lean,linarith,norm_num,True,
+le_one_add_finrank_fixedSubmodule_mul_dilatransvection,.lake/packages/mathlib/Mathlib/LinearAlgebra/Transvection/Generation.lean,linarith,omega,True,
+le_one_add_finrank_fixedSubmodule_mul_dilatransvection,.lake/packages/mathlib/Mathlib/LinearAlgebra/Transvection/Generation.lean,linarith,linarith,True,
+le_one_add_finrank_fixedSubmodule_mul_dilatransvection,.lake/packages/mathlib/Mathlib/LinearAlgebra/Transvection/Generation.lean,linarith,ring,True,
+FriendlyOperation.cons,.lake/packages/mathlib/Mathlib/Tactic/ComputeAsymptotics/Multiseries/Corecursion.lean,linarith,rfl,False,Tactic `rfl` failed: The left-hand side   2⁻¹ * dist x y is not definitionally equal to the right-hand side   dist x y  α : Type u_1 hd : α x y : Stream'.Seq α ⊢ 2⁻¹ * dist x y ≤ d
+FriendlyOperation.cons,.lake/packages/mathlib/Mathlib/Tactic/ComputeAsymptotics/Multiseries/Corecursion.lean,linarith,decide,False,Expected type must not contain free variables   2⁻¹ * dist x y ≤ dist x y  Hint: Use the `+revert` option to automatically clean up and revert free variables
+FriendlyOperation.cons,.lake/packages/mathlib/Mathlib/Tactic/ComputeAsymptotics/Multiseries/Corecursion.lean,linarith,norm_num,False,unsolved goals α : Type u_1 hd : α x y : Stream'.Seq α ⊢ 1 / 2 * dist x y ≤ dist x y
+FriendlyOperation.cons,.lake/packages/mathlib/Mathlib/Tactic/ComputeAsymptotics/Multiseries/Corecursion.lean,linarith,omega,False,"omega could not prove the goal: No usable constraints found. You may need to unfold definitions so `omega` can see linear arithmetic facts about `Nat` and `Int`, which may also inv"
+FriendlyOperation.cons,.lake/packages/mathlib/Mathlib/Tactic/ComputeAsymptotics/Multiseries/Corecursion.lean,linarith,linarith,False,linarith failed to find a contradiction α : Type u_1 hd : α x y : Stream'.Seq α a✝ : dist x y < 2⁻¹ * dist x y ⊢ False failed
+FriendlyOperation.cons,.lake/packages/mathlib/Mathlib/Tactic/ComputeAsymptotics/Multiseries/Corecursion.lean,linarith,ring,False,unsolved goals α : Type u_1 hd : α x y : Stream'.Seq α ⊢ dist x y * (1 / 2) ≤ dist x y
+norm_sq_add_norm_sub_add_sq_eq_norm_sub_sq_add_norm_sub_sq_add_two_mul_inner,.lake/packages/mathlib/Mathlib/Geometry/Euclidean/BritishFlag.lean,ring,rfl,True,
+norm_sq_add_norm_sub_add_sq_eq_norm_sub_sq_add_norm_sub_sq_add_two_mul_inner,.lake/packages/mathlib/Mathlib/Geometry/Euclidean/BritishFlag.lean,ring,decide,True,
+norm_sq_add_norm_sub_add_sq_eq_norm_sub_sq_add_norm_sub_sq_add_two_mul_inner,.lake/packages/mathlib/Mathlib/Geometry/Euclidean/BritishFlag.lean,ring,norm_num,True,
+norm_sq_add_norm_sub_add_sq_eq_norm_sub_sq_add_norm_sub_sq_add_two_mul_inner,.lake/packages/mathlib/Mathlib/Geometry/Euclidean/BritishFlag.lean,ring,omega,True,
+norm_sq_add_norm_sub_add_sq_eq_norm_sub_sq_add_norm_sub_sq_add_two_mul_inner,.lake/packages/mathlib/Mathlib/Geometry/Euclidean/BritishFlag.lean,ring,linarith,True,
+norm_sq_add_norm_sub_add_sq_eq_norm_sub_sq_add_norm_sub_sq_add_two_mul_inner,.lake/packages/mathlib/Mathlib/Geometry/Euclidean/BritishFlag.lean,ring,ring,True,
+fixedPt_neg,.lake/packages/mathlib/Mathlib/Analysis/Complex/UpperHalfPlane/FixedPoints.lean,ring,rfl,True,
+fixedPt_neg,.lake/packages/mathlib/Mathlib/Analysis/Complex/UpperHalfPlane/FixedPoints.lean,ring,decide,True,
+fixedPt_neg,.lake/packages/mathlib/Mathlib/Analysis/Complex/UpperHalfPlane/FixedPoints.lean,ring,norm_num,True,
+fixedPt_neg,.lake/packages/mathlib/Mathlib/Analysis/Complex/UpperHalfPlane/FixedPoints.lean,ring,omega,True,
+fixedPt_neg,.lake/packages/mathlib/Mathlib/Analysis/Complex/UpperHalfPlane/FixedPoints.lean,ring,linarith,True,
+fixedPt_neg,.lake/packages/mathlib/Mathlib/Analysis/Complex/UpperHalfPlane/FixedPoints.lean,ring,ring,True,
+norm_sub_nonneg,.lake/packages/mathlib/Mathlib/Topology/ContinuousMap/Bounded/Normed.lean,linarith,rfl,False,Tactic `rfl` failed: The left-hand side   0 is not definitionally equal to the right-hand side   ‖f‖ - f x  α : Type u_1 inst✝ : TopologicalSpace α f : α →ᵇ ℝ x : α ⊢ 0 ≤ ‖f‖ - f x
+norm_sub_nonneg,.lake/packages/mathlib/Mathlib/Topology/ContinuousMap/Bounded/Normed.lean,linarith,decide,False,Expected type must not contain free variables   0 ≤ ‖f‖ - f x  Hint: Use the `+revert` option to automatically clean up and revert free variables
+norm_sub_nonneg,.lake/packages/mathlib/Mathlib/Topology/ContinuousMap/Bounded/Normed.lean,linarith,norm_num,False,unsolved goals α : Type u_1 inst✝ : TopologicalSpace α f : α →ᵇ ℝ x : α ⊢ f x ≤ ‖f‖
+norm_sub_nonneg,.lake/packages/mathlib/Mathlib/Topology/ContinuousMap/Bounded/Normed.lean,linarith,omega,False,"omega could not prove the goal: No usable constraints found. You may need to unfold definitions so `omega` can see linear arithmetic facts about `Nat` and `Int`, which may also inv"
+norm_sub_nonneg,.lake/packages/mathlib/Mathlib/Topology/ContinuousMap/Bounded/Normed.lean,linarith,linarith,False,linarith failed to find a contradiction α : Type u_1 inst✝ : TopologicalSpace α f : α →ᵇ ℝ x : α a✝ : ‖f‖ - f x < 0 ⊢ False failed
+norm_sub_nonneg,.lake/packages/mathlib/Mathlib/Topology/ContinuousMap/Bounded/Normed.lean,linarith,ring,False,unsolved goals α : Type u_1 inst✝ : TopologicalSpace α f : α →ᵇ ℝ x : α ⊢ 0 ≤ ‖f‖ - f x
+dist_coe_center_sq,.lake/packages/mathlib/Mathlib/Analysis/Complex/UpperHalfPlane/Metric.lean,ring,rfl,True,
+dist_coe_center_sq,.lake/packages/mathlib/Mathlib/Analysis/Complex/UpperHalfPlane/Metric.lean,ring,decide,True,
+dist_coe_center_sq,.lake/packages/mathlib/Mathlib/Analysis/Complex/UpperHalfPlane/Metric.lean,ring,norm_num,True,
+dist_coe_center_sq,.lake/packages/mathlib/Mathlib/Analysis/Complex/UpperHalfPlane/Metric.lean,ring,omega,True,
+dist_coe_center_sq,.lake/packages/mathlib/Mathlib/Analysis/Complex/UpperHalfPlane/Metric.lean,ring,linarith,True,
+dist_coe_center_sq,.lake/packages/mathlib/Mathlib/Analysis/Complex/UpperHalfPlane/Metric.lean,ring,ring,True,
+finish_isSpecial,.lake/packages/mathlib/Mathlib/Data/PNat/Xgcd.lean,ring,rfl,False,Tactic `rfl` failed: The left-hand side   u.wp + (u.y * u.qp + u.zp) + u.wp * (u.y * u.qp + u.zp) is not definitionally equal to the right-hand side   u.wp + u.zp + u.wp * u.zp + (
+finish_isSpecial,.lake/packages/mathlib/Mathlib/Data/PNat/Xgcd.lean,ring,decide,False,Expected type must not contain free variables   u.wp + (u.y * u.qp + u.zp) + u.wp * (u.y * u.qp + u.zp) = u.wp + u.zp + u.wp * u.zp + (u.wp + 1) * u.qp * u.y  Hint: Use the `+rever
+finish_isSpecial,.lake/packages/mathlib/Mathlib/Data/PNat/Xgcd.lean,ring,norm_num,False,unsolved goals u : XgcdType hs : u.wp + u.zp + u.wp * u.zp = u.x * u.y ⊢ u.wp + (u.y * u.qp + u.zp) + u.wp * (u.y * u.qp + u.zp) = u.wp + u.zp + u.wp * u.zp + (u.wp + 1) * u.qp * u
+finish_isSpecial,.lake/packages/mathlib/Mathlib/Data/PNat/Xgcd.lean,ring,omega,False,omega could not prove the goal: a possible counterexample may satisfy the constraints   h ≥ 0   g ≥ 0   f ≥ 0   e ≥ 0   d ≥ 0   d + f - g - h ≥ 1   c ≥ 0   c + d - e ≤ 0 where  c :
+finish_isSpecial,.lake/packages/mathlib/Mathlib/Data/PNat/Xgcd.lean,ring,linarith,False,unsolved goals u : XgcdType hs : u.wp + u.zp + u.wp * u.zp = u.x * u.y ⊢ u.wp + (u.y * u.qp + u.zp) + u.wp * (u.y * u.qp + u.zp) = u.wp + u.zp + u.wp * u.zp + (u.wp + 1) * u.qp * u
+finish_isSpecial,.lake/packages/mathlib/Mathlib/Data/PNat/Xgcd.lean,ring,ring,True,
+posLog_le_abs,.lake/packages/mathlib/Mathlib/Analysis/SpecialFunctions/Log/PosLog.lean,linarith,rfl,False,Tactic `rfl` failed: The left-hand side   log |x| is not definitionally equal to the right-hand side   |x|  case inr x : ℝ h : 1 < |x| ⊢ log |x| ≤ |x|
+posLog_le_abs,.lake/packages/mathlib/Mathlib/Analysis/SpecialFunctions/Log/PosLog.lean,linarith,decide,False,Expected type must not contain free variables   log |x| ≤ |x|  Hint: Use the `+revert` option to automatically clean up and revert free variables
+posLog_le_abs,.lake/packages/mathlib/Mathlib/Analysis/SpecialFunctions/Log/PosLog.lean,linarith,norm_num,False,unsolved goals case inr x : ℝ h : 1 < |x| ⊢ log x ≤ |x|
+posLog_le_abs,.lake/packages/mathlib/Mathlib/Analysis/SpecialFunctions/Log/PosLog.lean,linarith,omega,False,"omega could not prove the goal: No usable constraints found. You may need to unfold definitions so `omega` can see linear arithmetic facts about `Nat` and `Int`, which may also inv"
+posLog_le_abs,.lake/packages/mathlib/Mathlib/Analysis/SpecialFunctions/Log/PosLog.lean,linarith,linarith,False,linarith failed to find a contradiction case inr x : ℝ h : 1 < |x| a✝ : |x| < log |x| ⊢ False failed
+posLog_le_abs,.lake/packages/mathlib/Mathlib/Analysis/SpecialFunctions/Log/PosLog.lean,linarith,ring,False,`ring_nf` made no progress on the goal
+cons_toFun,.lake/packages/mathlib/Mathlib/Tactic/ComputeAsymptotics/Multiseries/Monomial/Basic.lean,ring,rfl,False,Tactic `rfl` failed: The left-hand side   coef * (basis_hd x ^ exp * m.toFun basis_tl x) is not definitionally equal to the right-hand side   basis_hd x ^ exp * (coef * m.toFun bas
+cons_toFun,.lake/packages/mathlib/Mathlib/Tactic/ComputeAsymptotics/Multiseries/Monomial/Basic.lean,ring,decide,False,Expected type must not contain free variables   coef * (basis_hd x ^ exp * m.toFun basis_tl x) = basis_hd x ^ exp * (coef * m.toFun basis_tl x)  Hint: Use the `+revert` option to a
+cons_toFun,.lake/packages/mathlib/Mathlib/Tactic/ComputeAsymptotics/Multiseries/Monomial/Basic.lean,ring,norm_num,False,unsolved goals coef exp : ℝ m : UnitMonomial basis_hd : ℝ → ℝ basis_tl : Basis x : ℝ ⊢ coef * (basis_hd x ^ exp * m.toFun basis_tl x) = basis_hd x ^ exp * (coef * m.toFun basis_tl 
+cons_toFun,.lake/packages/mathlib/Mathlib/Tactic/ComputeAsymptotics/Multiseries/Monomial/Basic.lean,ring,omega,False,"omega could not prove the goal: No usable constraints found. You may need to unfold definitions so `omega` can see linear arithmetic facts about `Nat` and `Int`, which may also inv"
+cons_toFun,.lake/packages/mathlib/Mathlib/Tactic/ComputeAsymptotics/Multiseries/Monomial/Basic.lean,ring,linarith,True,
+cons_toFun,.lake/packages/mathlib/Mathlib/Tactic/ComputeAsymptotics/Multiseries/Monomial/Basic.lean,ring,ring,True,
+dist_sq_mul_dist_add_dist_sq_mul_dist,.lake/packages/mathlib/Mathlib/Geometry/Euclidean/Triangle.lean,ring,rfl,True,
+dist_sq_mul_dist_add_dist_sq_mul_dist,.lake/packages/mathlib/Mathlib/Geometry/Euclidean/Triangle.lean,ring,decide,True,
+dist_sq_mul_dist_add_dist_sq_mul_dist,.lake/packages/mathlib/Mathlib/Geometry/Euclidean/Triangle.lean,ring,norm_num,True,
+dist_sq_mul_dist_add_dist_sq_mul_dist,.lake/packages/mathlib/Mathlib/Geometry/Euclidean/Triangle.lean,ring,omega,True,
+dist_sq_mul_dist_add_dist_sq_mul_dist,.lake/packages/mathlib/Mathlib/Geometry/Euclidean/Triangle.lean,ring,linarith,True,
+dist_sq_mul_dist_add_dist_sq_mul_dist,.lake/packages/mathlib/Mathlib/Geometry/Euclidean/Triangle.lean,ring,ring,True,
+integral_sin_pow,.lake/packages/mathlib/Mathlib/Analysis/SpecialFunctions/Integrals/Basic.lean,ring,rfl,True,
+integral_sin_pow,.lake/packages/mathlib/Mathlib/Analysis/SpecialFunctions/Integrals/Basic.lean,ring,decide,True,
+integral_sin_pow,.lake/packages/mathlib/Mathlib/Analysis/SpecialFunctions/Integrals/Basic.lean,ring,norm_num,True,
+integral_sin_pow,.lake/packages/mathlib/Mathlib/Analysis/SpecialFunctions/Integrals/Basic.lean,ring,omega,True,
+integral_sin_pow,.lake/packages/mathlib/Mathlib/Analysis/SpecialFunctions/Integrals/Basic.lean,ring,linarith,True,
+integral_sin_pow,.lake/packages/mathlib/Mathlib/Analysis/SpecialFunctions/Integrals/Basic.lean,ring,ring,True,
+integral_log_sin_zero_pi,.lake/packages/mathlib/Mathlib/Analysis/SpecialFunctions/Integrals/LogTrigonometric.lean,ring,rfl,True,
+integral_log_sin_zero_pi,.lake/packages/mathlib/Mathlib/Analysis/SpecialFunctions/Integrals/LogTrigonometric.lean,ring,decide,True,
+integral_log_sin_zero_pi,.lake/packages/mathlib/Mathlib/Analysis/SpecialFunctions/Integrals/LogTrigonometric.lean,ring,norm_num,True,
+integral_log_sin_zero_pi,.lake/packages/mathlib/Mathlib/Analysis/SpecialFunctions/Integrals/LogTrigonometric.lean,ring,omega,True,
+integral_log_sin_zero_pi,.lake/packages/mathlib/Mathlib/Analysis/SpecialFunctions/Integrals/LogTrigonometric.lean,ring,linarith,True,
+integral_log_sin_zero_pi,.lake/packages/mathlib/Mathlib/Analysis/SpecialFunctions/Integrals/LogTrigonometric.lean,ring,ring,True,
+logDeriv_mul,.lake/packages/mathlib/Mathlib/FieldTheory/Differential/Basic.lean,ring,rfl,True,
+logDeriv_mul,.lake/packages/mathlib/Mathlib/FieldTheory/Differential/Basic.lean,ring,decide,True,
+logDeriv_mul,.lake/packages/mathlib/Mathlib/FieldTheory/Differential/Basic.lean,ring,norm_num,True,
+logDeriv_mul,.lake/packages/mathlib/Mathlib/FieldTheory/Differential/Basic.lean,ring,omega,True,
+logDeriv_mul,.lake/packages/mathlib/Mathlib/FieldTheory/Differential/Basic.lean,ring,linarith,True,
+logDeriv_mul,.lake/packages/mathlib/Mathlib/FieldTheory/Differential/Basic.lean,ring,ring,True,
+goldenRatio_add_goldenConj,.lake/packages/mathlib/Mathlib/NumberTheory/Real/GoldenRatio.lean,ring,rfl,True,
+goldenRatio_add_goldenConj,.lake/packages/mathlib/Mathlib/NumberTheory/Real/GoldenRatio.lean,ring,decide,True,
+goldenRatio_add_goldenConj,.lake/packages/mathlib/Mathlib/NumberTheory/Real/GoldenRatio.lean,ring,norm_num,True,
+goldenRatio_add_goldenConj,.lake/packages/mathlib/Mathlib/NumberTheory/Real/GoldenRatio.lean,ring,omega,True,
+goldenRatio_add_goldenConj,.lake/packages/mathlib/Mathlib/NumberTheory/Real/GoldenRatio.lean,ring,linarith,True,
+goldenRatio_add_goldenConj,.lake/packages/mathlib/Mathlib/NumberTheory/Real/GoldenRatio.lean,ring,ring,True,
+sinh_sq,.lake/packages/mathlib/Mathlib/Analysis/Complex/Trigonometric.lean,ring,rfl,False,Tactic `rfl` failed: The left-hand side   sinh x ^ 2 is not definitionally equal to the right-hand side   cosh x ^ 2 - (cosh x ^ 2 - sinh x ^ 2)  x : ℂ ⊢ sinh x ^ 2 = cosh x ^ 2 - 
+sinh_sq,.lake/packages/mathlib/Mathlib/Analysis/Complex/Trigonometric.lean,ring,decide,False,Expected type must not contain free variables   sinh x ^ 2 = cosh x ^ 2 - (cosh x ^ 2 - sinh x ^ 2)  Hint: Use the `+revert` option to automatically clean up and revert free variab
+sinh_sq,.lake/packages/mathlib/Mathlib/Analysis/Complex/Trigonometric.lean,ring,norm_num,False,unsolved goals x : ℂ ⊢ sinh x ^ 2 = cosh x ^ 2 - 1
+sinh_sq,.lake/packages/mathlib/Mathlib/Analysis/Complex/Trigonometric.lean,ring,omega,False,"omega could not prove the goal: No usable constraints found. You may need to unfold definitions so `omega` can see linear arithmetic facts about `Nat` and `Int`, which may also inv"
+sinh_sq,.lake/packages/mathlib/Mathlib/Analysis/Complex/Trigonometric.lean,ring,linarith,False,linarith failed to find a contradiction x : ℂ ⊢ False failed
+sinh_sq,.lake/packages/mathlib/Mathlib/Analysis/Complex/Trigonometric.lean,ring,ring,True,
+isCoprime_col,.lake/packages/mathlib/Mathlib/LinearAlgebra/Matrix/SpecialLinearGroup.lean,ring,rfl,False,Tactic `rfl` failed: The left-hand side   ↑A 1 1 * ↑A 0 0 + -↑A 0 1 * ↑A 1 0 is not definitionally equal to the right-hand side   ↑A 0 0 * ↑A 1 1 - ↑A 0 1 * ↑A 1 0  case refine_1 R
+isCoprime_col,.lake/packages/mathlib/Mathlib/LinearAlgebra/Matrix/SpecialLinearGroup.lean,ring,decide,False,Expected type must not contain free variables   ↑A 1 1 * ↑A 0 0 + -↑A 0 1 * ↑A 1 0 = ↑A 0 0 * ↑A 1 1 - ↑A 0 1 * ↑A 1 0  Hint: Use the `+revert` option to automatically clean up and
+isCoprime_col,.lake/packages/mathlib/Mathlib/LinearAlgebra/Matrix/SpecialLinearGroup.lean,ring,norm_num,False,"unsolved goals case refine_1 R : Type v inst✝ : CommRing R A : SL(2, R) j : Fin 2 ⊢ ↑A 1 1 * ↑A 0 0 + -(↑A 0 1 * ↑A 1 0) = ↑A 0 0 * ↑A 1 1 - ↑A 0 1 * ↑A 1 0"
+isCoprime_col,.lake/packages/mathlib/Mathlib/LinearAlgebra/Matrix/SpecialLinearGroup.lean,ring,omega,False,"omega could not prove the goal: No usable constraints found. You may need to unfold definitions so `omega` can see linear arithmetic facts about `Nat` and `Int`, which may also inv"
+isCoprime_col,.lake/packages/mathlib/Mathlib/LinearAlgebra/Matrix/SpecialLinearGroup.lean,ring,linarith,False,"linarith failed to find a contradiction case refine_1 R : Type v inst✝ : CommRing R A : SL(2, R) j : Fin 2 ⊢ False failed"
+isCoprime_col,.lake/packages/mathlib/Mathlib/LinearAlgebra/Matrix/SpecialLinearGroup.lean,ring,ring,True,

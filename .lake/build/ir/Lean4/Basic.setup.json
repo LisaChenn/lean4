@@ -1,0 +1,7 @@
+{"plugins": [],
+ "package": "Lean4",
+ "options": {"pp.unicode.fun": true, "autoImplicit": false},
+ "name": "Lean4.Basic",
+ "isModule": false,
+ "importArts": {},
+ "dynlibs": []}

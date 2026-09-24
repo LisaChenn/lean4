@@ -1,0 +1,174 @@
+================================================================================
+Q1 TOY PIPELINE — end-to-end informal ↔ formal round-trip
+================================================================================
+
+Purpose
+-------
+Close the arc once, by hand, on ONE problem (Q1 — the nurses' bandages GSM8K
+problem). This is not a scalable pipeline yet; it's a proof-of-concept that
+the four stages compose into something meaningful. Every stage is real:
+
+    STAGE 1  informal → Lean            [Lean4/Q1.lean, hand-formalized]
+    STAGE 2  Lean → tree                [data/traces/Q1.json, from lean-repl]
+    STAGE 3  tree → pruned tree         [pipeline/Q1_toy/Pruned.lean, hand-designed]
+    STAGE 4  pruned tree → informal     [see "restated problem" below]
+
+Semantics is preserved end-to-end: the theorem the pruned Lean proves is
+logically equivalent to the theorem the original Lean proves, and the restated
+prose asks the same mathematical question as the original prose.
+
+
+--------------------------------------------------------------------------------
+STAGE 1 — informal → Lean
+--------------------------------------------------------------------------------
+
+Original informal problem (from GSM8K 1190, quoted verbatim in Lean4/Q1.lean):
+
+    A nurses' station orders bandages in bulk packs of 50. On the first day,
+    the nurses used 38 bandages and ordered one bulk pack of bandages. On the
+    second day, they used ten fewer bandages. On the third day, they ordered
+    two bulk packs of bandages and only used half a pack. They had 78 bandages
+    left at the end of the third day. How many bandages did they start with
+    on the first day?
+
+    Stated answer: 19.
+
+Hand-formalized as (`Lean4/Q1.lean`):
+
+    def afterDay1 (start : ℤ) : ℤ := start - 38 + 50
+    def afterDay2 (n     : ℤ) : ℤ := n     - 28
+    def afterDay3 (n     : ℤ) : ℤ := n     + 100 - 25
+
+    def simulate (s : ℤ) : ℤ := afterDay3 (afterDay2 (afterDay1 s))
+
+    theorem nurses_bandages (n : ℤ) (h : simulate n = 78) : n = 19 := by
+      unfold simulate afterDay1 afterDay2 afterDay3 at h
+      linarith
+
+Notes on the formalization choices:
+  • Each day is a named function → the Lean text mirrors the narrative structure.
+  • Type is ℤ (not ℕ) so intermediate subtractions don't clip at zero.
+  • The proof is deliberately mechanical: unfold the story, hand it to linarith.
+
+
+--------------------------------------------------------------------------------
+STAGE 2 — Lean → tree
+--------------------------------------------------------------------------------
+
+Extracted trace (data/traces/Q1.json, produced by scripts/extract_traces.sh
+with `allTactics: true`). Two tactic steps, with the goal state at each node:
+
+    node 0  (proofState = 0)
+        tactic : unfold simulate afterDay1 afterDay2 afterDay3 at h
+        before : h : simulate n = 78              ⊢ n = 19
+        (unfolds the four defs in the hypothesis)
+
+    node 1  (proofState = 1)
+        tactic : linarith
+        before : h : n - 38 + 50 - 28 + 100 - 25 = 78    ⊢ n = 19
+        (closes the goal)
+
+Caveat: `allTactics: true` gives a flat list, not a proper elaboration tree.
+For richer transformations (e.g., pruning inside `simp`/`rw` sequences) we'll
+want the `InfoTree` instead. For this problem the flat list is enough because
+the "story structure" of the proof lives in the *defs*, not the tactics.
+
+
+--------------------------------------------------------------------------------
+STAGE 3 — tree → pruned tree
+--------------------------------------------------------------------------------
+
+Two prunings, applied in order:
+
+  Prune A — inline the defs.
+    Observation: `simulate`, `afterDay1..3` exist only to be `unfold`ed. They
+    add narrative colour but no logical content. Inlining them:
+        simulate n = 78
+          = afterDay3 (afterDay2 (afterDay1 n)) = 78
+          = ((n - 38 + 50) - 28) + 100 - 25 = 78
+          = n - 38 + 50 - 28 + 100 - 25 = 78              (associativity)
+    The `unfold` tactic becomes a no-op and can be dropped.
+
+  Prune B — constant-fold the linear expression.
+    - 38 + 50 - 28 + 100 - 25  =  + 59
+    Hypothesis simplifies to  `n + 59 = 78`.
+
+Pruned proof (pipeline/Q1_toy/Pruned.lean, verified to type-check):
+
+    theorem nurses_bandages (n : ℤ) (h : n + 59 = 78) : n = 19 := by
+      linarith
+
+Tree comparison:
+
+    original:   Root
+                 ├─ def afterDay1
+                 ├─ def afterDay2
+                 ├─ def afterDay3
+                 ├─ def simulate
+                 └─ theorem
+                     └─ unfold …
+                         └─ linarith
+
+    pruned:     Root
+                 └─ theorem
+                     └─ linarith
+
+Semantic equivalence check: the pruned theorem's hypothesis is exactly the
+simplified form of the original hypothesis (by definitional unfolding + integer
+arithmetic). Any model of the original hypothesis is a model of the pruned one
+and vice versa, so the two theorems assert the same fact.
+
+
+--------------------------------------------------------------------------------
+STAGE 4 — pruned tree → informal
+--------------------------------------------------------------------------------
+
+Restated informal problem (hand-written from the pruned Lean):
+
+    A nurses' station starts a three-day period with some number of bandages.
+    Over those three days their supply increases by a net of 59 bandages, and
+    at the end they have 78 bandages left. How many did they start with?
+
+    Stated answer: 19.
+
+What the round-trip did to the problem:
+
+    dimension        original                       restated
+    -----------      ---------------------------    -------------------------
+    length           ~90 words                      ~35 words
+    structure        3 days × (used, ordered)       one net figure
+    numbers exposed  38, 50, 28, 100, 25            59
+    reasoning asked  reconstruct + accumulate       single subtraction
+    story fidelity   full narrative                 stripped to the accounting
+
+This is a *compression* transformation — a strictly harder informal problem
+turned into a strictly easier one that has the same answer. Other prunings
+(e.g., generalizing 78 → k, or substituting the story domain) would produce
+different transformations from the same formal middle.
+
+
+--------------------------------------------------------------------------------
+WHAT THIS DEMONSTRATES (AND WHAT IT DOESN'T)
+--------------------------------------------------------------------------------
+
+Demonstrates:
+  ✓ The four-stage pipeline composes — the arc closes on a real problem.
+  ✓ "Tree pruning" in the formal middle corresponds to a legible operation on
+    the informal problem (here: collapse sequential accounting into a net).
+  ✓ Semantic equivalence is preserved through the round-trip.
+
+Does NOT yet demonstrate:
+  ✗ Any of the stages is automated. Formalization, pruning, and re-rendering
+    were all done by hand.
+  ✗ The trace we extracted is a real proof tree. `allTactics: true` is flat;
+    a proper `InfoTree` extractor is future work.
+  ✗ The pruning generalizes beyond "collapse sequential linear arithmetic."
+    Other pruning classes (dropping unused hypotheses, replacing a subproof
+    with an automation call, factoring shared sub-expressions) haven't been
+    exercised.
+
+Recommended next probe:
+  Pick ONE stage to automate and stress it on Q2–Q10. My suggestion is
+  stage 4 (pruned Lean → informal) because it's the stage with zero tooling
+  today, and because if an LLM can produce a plausible restatement from a
+  pruned Lean file, that's the shortest path to a demoable end-to-end system.

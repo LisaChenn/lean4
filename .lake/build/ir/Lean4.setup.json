@@ -1,0 +1,9 @@
+{"plugins": [],
+ "package": "Lean4",
+ "options": {"pp.unicode.fun": true, "autoImplicit": false},
+ "name": "Lean4",
+ "isModule": false,
+ "importArts":
+ {"Lean4.Basic":
+  [["/Users/Lisa/Documents/GitHub/lean4/.lake/build/lib/lean/Lean4/Basic.olean"]]},
+ "dynlibs": []}
