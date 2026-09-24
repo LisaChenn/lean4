@@ -1,0 +1,65 @@
+{
+  "file": "Q6.lean",
+  "namespace": "q6",
+  "finisher": "norm_num",
+  "finisher_line": 14,
+  "defs": [
+    {
+      "name": "ouncesPerGlass",
+      "type": "ℕ",
+      "body": {
+        "kind": "lit",
+        "value": 8
+      }
+    },
+    {
+      "name": "glasses",
+      "type": "ℕ",
+      "body": {
+        "kind": "lit",
+        "value": 2
+      }
+    },
+    {
+      "name": "caloriesPerOunce",
+      "type": "ℕ",
+      "body": {
+        "kind": "lit",
+        "value": 3
+      }
+    },
+    {
+      "name": "totalCalories",
+      "type": "ℕ",
+      "body": {
+        "kind": "op",
+        "op": "*",
+        "children": [
+          {
+            "kind": "op",
+            "op": "*",
+            "children": [
+              {
+                "kind": "ref",
+                "name": "glasses"
+              },
+              {
+                "kind": "ref",
+                "name": "ouncesPerGlass"
+              }
+            ]
+          },
+          {
+            "kind": "ref",
+            "name": "caloriesPerOunce"
+          }
+        ]
+      }
+    }
+  ],
+  "theorem": {
+    "name": "calories",
+    "lhs": "totalCalories",
+    "rhs": 48
+  }
+}

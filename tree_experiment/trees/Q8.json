@@ -1,0 +1,65 @@
+{
+  "file": "Q8.lean",
+  "namespace": "q8",
+  "finisher": "norm_num",
+  "finisher_line": 15,
+  "defs": [
+    {
+      "name": "acres",
+      "type": "ℕ",
+      "body": {
+        "kind": "lit",
+        "value": 10
+      }
+    },
+    {
+      "name": "tonsPerAcre",
+      "type": "ℕ",
+      "body": {
+        "kind": "lit",
+        "value": 5
+      }
+    },
+    {
+      "name": "barrelsPerTon",
+      "type": "ℕ",
+      "body": {
+        "kind": "lit",
+        "value": 2
+      }
+    },
+    {
+      "name": "barrelsPerYear",
+      "type": "ℕ",
+      "body": {
+        "kind": "op",
+        "op": "*",
+        "children": [
+          {
+            "kind": "op",
+            "op": "*",
+            "children": [
+              {
+                "kind": "ref",
+                "name": "acres"
+              },
+              {
+                "kind": "ref",
+                "name": "tonsPerAcre"
+              }
+            ]
+          },
+          {
+            "kind": "ref",
+            "name": "barrelsPerTon"
+          }
+        ]
+      }
+    }
+  ],
+  "theorem": {
+    "name": "barrels",
+    "lhs": "barrelsPerYear",
+    "rhs": 100
+  }
+}

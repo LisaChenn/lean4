@@ -1,0 +1,75 @@
+{
+  "file": "Q10.lean",
+  "namespace": "q10",
+  "finisher": "norm_num",
+  "finisher_line": 15,
+  "defs": [
+    {
+      "name": "blueBlocks",
+      "type": "ℕ",
+      "body": {
+        "kind": "lit",
+        "value": 4
+      }
+    },
+    {
+      "name": "yellowBlocks",
+      "type": "ℕ",
+      "body": {
+        "kind": "op",
+        "op": "*",
+        "children": [
+          {
+            "kind": "lit",
+            "value": 2
+          },
+          {
+            "kind": "ref",
+            "name": "blueBlocks"
+          }
+        ]
+      }
+    },
+    {
+      "name": "totalBlocks",
+      "type": "ℕ",
+      "body": {
+        "kind": "lit",
+        "value": 32
+      }
+    },
+    {
+      "name": "redBlocks",
+      "type": "ℕ",
+      "body": {
+        "kind": "op",
+        "op": "-",
+        "children": [
+          {
+            "kind": "op",
+            "op": "-",
+            "children": [
+              {
+                "kind": "ref",
+                "name": "totalBlocks"
+              },
+              {
+                "kind": "ref",
+                "name": "blueBlocks"
+              }
+            ]
+          },
+          {
+            "kind": "ref",
+            "name": "yellowBlocks"
+          }
+        ]
+      }
+    }
+  ],
+  "theorem": {
+    "name": "red",
+    "lhs": "redBlocks",
+    "rhs": 20
+  }
+}

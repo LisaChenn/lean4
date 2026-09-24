@@ -1,0 +1,57 @@
+{
+  "file": "Q3.lean",
+  "namespace": "IphoneAge",
+  "finisher": "rfl",
+  "finisher_line": 18,
+  "defs": [
+    {
+      "name": "suzyAge",
+      "type": "ℕ",
+      "body": {
+        "kind": "lit",
+        "value": 1
+      }
+    },
+    {
+      "name": "benAge",
+      "type": "ℕ",
+      "body": {
+        "kind": "op",
+        "op": "*",
+        "children": [
+          {
+            "kind": "lit",
+            "value": 2
+          },
+          {
+            "kind": "ref",
+            "name": "suzyAge"
+          }
+        ]
+      }
+    },
+    {
+      "name": "brandonAge",
+      "type": "ℕ",
+      "body": {
+        "kind": "op",
+        "op": "*",
+        "children": [
+          {
+            "kind": "lit",
+            "value": 4
+          },
+          {
+            "kind": "ref",
+            "name": "benAge"
+          }
+        ]
+      }
+    }
+  ],
+  "theorem": {
+    "name": "brandon_is_8",
+    "lhs": "brandonAge",
+    "rhs": 8
+  }
+}
